@@ -1,0 +1,249 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>空之轨迹三部曲 战斗系统解说</title>
+<script type="text/javascript" src="all/base.htm"></script>
+<script type="text/javascript" src="all/scroll.js"></script>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img { 
+	border: none;
+}
+a:link {
+	color: #42413C;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+.container {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto; 
+}
+header {
+	background-color: #ADB96E;
+}
+
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 780px;
+	float: left;
+}
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; }
+ul.nav {
+	list-style: none; 
+		border-top: 1px solid #666; 
+	margin-bottom: 15px; 
+}
+ul.nav li {
+	border-bottom: 1px solid #666; 
+}
+ul.nav a, ul.nav a:visited { 	padding: 5px 5px 5px 15px;
+	display: block;  
+	width: 160px;   
+	text-decoration: none;
+	background-color: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: #ADB96E;
+	color: #FFF;
+}
+footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;
+	clear: both; 
+}
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+header, section, footer, aside, article, figure {
+	display: block;
+}
+.container .content section h2 {
+	font-family: 微软雅黑;
+}
+.container .content section p {
+	font-family: 微软雅黑;
+}
+.container .sidebar1 .nav li a {
+	font-family: 微软雅黑;
+}
+.container .sidebar1 aside p {
+	font-family: 微软雅黑;
+}
+.container footer p {
+	font-family: 微软雅黑;
+}
+.container aside h4 {
+	font-family: 微软雅黑;
+}
+.container .content h1 {
+	font-family: 微软雅黑;
+}
+.container aside h4 {
+	font-family: 微软雅黑;
+}
+.container footer address {
+	font-family: 微软雅黑;
+}
+.container .content section h3 {
+	font-family: 微软雅黑;
+}
+.container .content section h3 {
+	color: #F00;
+}
+.container .content section p_red {
+	color: #F00;
+}
+.container .content section p_red {
+	font-family: 微软雅黑;
+}
+-->
+</style>
+<!--[if lt IE 9]><script src="./all/html5IE.js"></script><![endif]-->
+</head>
+<body>
+<div class="container">
+  <header>
+    <a href="combat.html#"><img src="pictures/Logo3rd.jpg" alt="LOGO" name="Insert_logo"width="180" height="100" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a>    
+  </header>
+  <div class="sidebar1">
+    <ul class="nav">
+        <li><a href="index.html">站点首页</a></li>
+        <li><a href="index1.html">FC攻略首页</a></li>
+        <li><a href="home.html">SC攻略首页</a></li>
+        <li><a href="index3.html">3rd攻略首页</a></li>
+        <li><a href="appendix1.html">FC附录页面</a></li>
+        <li><a href="fulu.html">SC附录I页面</a></li>
+        <li><a href="appendix3.html">3rd附录页面</a></li>
+    </ul>
+    <aside></aside>
+  <!-- end .sidebar1 --></div>
+  <article class="content">
+    <h1>空之轨迹三部曲战斗系统简析</h1>
+    <section>
+      <p>作者 高晨水水</p>
+      <p>       本文主要介绍了空之轨迹FC、SC、3 rd的战斗系统基本情况，主要面向新手玩家和中阶玩家，建议仔细阅读后再看其他的战斗系统分析。也请老玩家轻轻拍砖。</p>
+      <p>首先，按照时间顺序讲一下一场战斗的过程      </p>
+      <h3>1.进入战斗</h3>
+      <p>进入战斗的方式主要分为普通模式、先制攻击模式、被偷袭模式；<br>
+        可进入的战斗包括路边怪、剧情战(包括BOSS战、通缉魔兽等)、魔兽宝箱等。</p>
+      <p>对于路边怪，在被敌方发现之前与敌人接触一般会进入先制攻击模式，此时我方全体人员行动靠前；在被敌方发现后使用人物正面与敌人接触则进入普通模式，此时双方行动顺序按照正常模式进行(下文会写)；被敌人接触到人物背后则进入被偷袭模式，此时我方全体人员强制来到战场中央被敌人包围，行动顺序靠后。</p>
+      <p>剧情战/通缉魔兽等一般都是以普通模式进入战斗，少数剧情战例外，比如SC第六章三个人偶约修亚、第七章玲的战斗中我方都是以被偷袭的方式进入战斗。</p>
+      <p>魔兽宝箱很简单，打开后直接进入普通战斗。</p>
+      <h3>2.开始战斗 </h3>
+      <p>由于进入方式不同开始战斗时的站位、行动顺序也有所不同<br>
+      普通战斗模式：我方人员按照战前Tactics里面设定的站位进入战场，屏幕左侧是AT栏，栏上的头像对应敌我双方的作战单位，每当一个头像移到最上方时该单位开始行动。普通模式进入战场时双方按照各自的SPD+一定的随机值排出初始行动顺序一般来说敌我双方SPD相差都不多时排列顺序基本是随机的，但一般第一个动的是我方人员。当我方所有人员的SPD相差不大时，对排序影响最大的是Tactics栏的人物行走顺序，一般在行走顺序最后的人也是最后一个行动的= =</p>
+      <p>先制攻击模式：如果不是SPD相差太大，我方全体人员都先于敌方行动1~2次，我方人员站位与普通模式相同</p>
+      <p>被偷袭模式：一般来说敌方先动一个回合左右，不过如果我方有人SPD很高的话也有可能先于敌人行动。站位为我方人员站在战场中央环状分布，敌方围绕我方一圈。</p>
+      <h3>3.战斗进行</h3>
+      <p><strong>行动的概念</strong>：当AT栏某单位的图标移植最上(此时AT=0)，该单位开始行动，行动包括普通攻击、移动、使用道具、吟唱/使用魔法、使用战技等。进行一次行动后需要消耗一定的硬直时间才能进行下次行动，硬直时间的计算公式为<em>（100ST/SPD）</em>AT(向下取整，比如算出来的2.99AT的话就是2AT)，其中的ST(Skill  Time)为每种行动的固定属性，SPD为人物属性(可以在菜单内看到)，使用道具/移动的ST为20，普通攻击的ST为30，绝大多数魔法的冷却ST也为20(3rd部分有例外)，其他魔法/战技ST请翻阅三部曲对应的附录。</p>
+      <p><strong>命中率的计算</strong>：<em>命中率=攻击方DEX/(攻击方DEX+防御方AGL)*100%</em></p>
+      <p>魔法攻击、我方和大多数敌方的S战技攻击、攻击料理、FC中的绝影、精准射击等均为无视计算公式的强制命中，其余攻击/战技需要计算命中率，下文对于攻击的计算均建立在考虑命中的前提下。</p>
+      <p><strong>物理攻击部分：</strong></p>
+      <p>轮到作战单位行动后可以向攻击范围内的敌方发动攻击。物理攻击主要包括普通攻击、物理系战技攻击、料理攻击(料理攻击视为使用道具)。物理攻击的计算公式为</p>
+      <p><em>D=3.38(STR+k*伤害修正)*属性有效率%-2.82*DEF</em><br>
+        （当D计算值小于0时，D=0~10之间的一个数），最终伤害还要加上一个随机浮动值-0.1D≤d≤0.1D。<br>
+        式子中各参数的含义：<br>
+        D：理论伤害值，最终伤害值=D+d；<br>
+        STR：攻击力，人物自带属性，可以在菜单中查看。料理攻击里也在这里带入，特别的，对于PSP版的SC，这个参与计算的STR=使用人物STR+料理STR，所以伤害十分惊人<br>
+        伤害修正：代表战技的附加伤害计算的参数，普通攻击/料理攻击的伤害修正为0，各战技伤害修正可查阅三部曲的战技数据表。<br>
+        k: S战技附加参数，普通战技/普通攻击/料理攻击的k为1，对于100~199CP的S战技，<em>K=(0.51+人物等级*0.005)*2</em>，对于200CP的S战技<em>k=(0.51+人物等级+0.005)*3</em><br>
+        属性有效率：敌方人物属性与我方攻击属性的计算。不佩戴属性护符的我方人员是没有属性的，佩戴护符后我方人员的全部物理攻击均带有该属性，使用情报回路可以查看敌方的属性有效率，100为普通，低于100时属性攻击被削弱，高于100被加强，当有效率为0时是用对应属性的攻击无效化。3rd中带有属性的S战技计算方式相同。<br>
+        DEF：防御力，可以翻阅敌方数据表查看。</p>
+      <p><strong>魔法攻击部分</strong></p>
+      <p>魔法攻击没有距离限制。计算公式为<br>
+      <em>(4.1*ATS+3.3*伤害修正)*属性有效率%-2.8*ADF</em></p>
+      <p>ATS：魔法攻击力，可以在菜单中查看<br>
+        伤害修正：与战技的修正同理，可以查阅数据表<br>
+        属性有效率：对应属性魔法的有效率可以通过情报回路查看，也可以翻阅敌方数据表，注意在FC&amp;SC中时空幻属性的有效率一般都是100<br>
+        ADF：魔法防御力，请翻阅敌方数据表</p>
+      <p><strong>回复魔法</strong></p>
+      <p>回复魔法的回复量只与魔法本身有关，与发动魔法的人和接受回复的人的属性无关。只有在抢到AT奖励时回复量才会×1.5</p>
+      <p><strong>辅助魔法</strong></p>
+      <p>辅助魔法主要是给我方加BUFF，给敌方加DUBUFF。各类辅助魔法的使用都有其特定的方式，这里不多介绍</p>
+      <h3>4.战斗结束</h3>
+      <p>达成战斗结束条件即可结束战斗。对于我方来说，一般是消灭所有敌人即为战斗胜利。部分战斗中要求消灭特定敌人即可战斗胜利，也有的战斗要求坚持到一定的AT时间即可结束战斗。<br>
+      我方失败的条件一般为全员战斗不能，当有随行NPC时，NPC战斗不能即为我方战斗失败。</p>
+      <h3>5.战斗结算</h3>
+      <p><strong>奖励结算</strong></p>
+      <p>获得的奖励主要是敌方掉落的晶片、道具等。打死一个敌人就会获得该敌人固化带有的晶片(用情报回路能看见)，同时按照掉落率计算掉落物品。</p>
+      <p>额外的晶片奖励主要是在晶片奖励回合使用攻击手段攻击敌方获得额外的晶片奖励。晶片奖励与打击数有关，每个魔法、战技的打击数请翻阅魔法战技数据表。</p>
+      <p>晶片奖励超过限度(FC&amp;SC为每种70，3rd为每种300)后不再增加</p>
+      <p><strong>经验结算</strong></p>
+      <p>战斗胜利后，还活着的队员将获得经验值。经验值的计算是每名队员单独结算的，并不会出现部分别的游戏那种四人平分经验值的情况。</p>
+<p>经验值的计算方法：每一个敌人都有自己的固定经验值，与敌人等级相同的我方单位就会获得这个经验值，比敌人等级高的我方人员获得的经验会打折，基本上每高一级获得经验变为原来的50%；在SC&amp;3rd中，比敌方等级低的人员会得到经验加成，每低一级获得的经验是原来的200%；在FC中没有经验加成的设定。</p>
+</section>
+    <section>
+      <h2>部分内容详解</h2>
+      <h3>1.开场站位</h3>
+      <p>从FC到3rd，站位一直都很重要，这也是轨迹不同于大多数RPG的一个特色。</p>
+      <p>我方成员可以在一个矩形阵列内自由配置，开战后改站位就是我方的“阵地”。排列站位需要考虑以下问题：前排是否需要肉盾抵挡伤害？近身物理系角色是否需要尽快冲入敌阵？回复/辅助系魔法是否能够覆盖尽可能多的需要的人？防御力较弱的法师们是否在后排减少被攻击的机会？</p>
+      <p>排阵时还需要注意的是：空轨的魔法射程是无限的，因此法师在任何地点都可以使用需要的魔法</p>
+      <p>因此，比较经典的阵型有：</p>
+      <p>双人：FC开始阶段艾约的双人阵型，位于区域中部，可进可退，由于这期间我方MOV不高，因此需要物理攻击的我方人员必须靠前配置；</p>
+      <p>双人各守一个后方角落：FC中经常会用的阵型，该阵型可以最大限度的避免开场遭遇敌方的攻击，尤其适合魔法流使用</p>
+      <p>三人：空轨中三人作战机会不多，唯一比较重要的是FC第二章BOSS战，此战需要三人全部集中于后方一个角落，小艾在角内，科洛丝和小约在外侧，此阵可以避免远侧一个敌人的两轮攻击，加上科洛丝的一轮斗魂，开场后两回合基本不会有人受伤，同时小艾的助威可以覆盖全员。</p>
+      <p>四人：空轨的主要作战队形都是四人队。四人队形可以大致分为物理系阵型、魔法系阵型、综合系阵型和其他类阵型。</p>
+      <p>物理系阵型的排布取决于队伍中负责物理攻击的队员的数目，一般是1-3名，物理系队员自然要靠前放置，而负责辅助/回复的队员则要稍微靠后一些，但也不能太后，否则无法互相策应；</p>
+      <p>魔法系阵型一般比较靠后，队伍最前方的人员是生存力最强的角色，主要负责吸引攻击；其余队员靠后站位</p>
+      <p>综合类阵型比较著名的是FC终章的双魔队的阵型，约修亚在前排中央，科洛丝、奥利维尔在后排两角，艾丝蒂尔在三人的中央</p>
+      <p>其他阵型主要与战斗队员有关，比如连锁队中全员都是物理系，最好都在前排以覆盖尽可能多的敌人</p>
+      <h3>2.战斗流派</h3>
+      <p>从SC开始，一些有着强悍输出能力的战斗方法开始出现并流行。这里给出一些比较常见的。</p>
+      <p>1. 炎龙流：在SC时代，阿加特的公牛之怒II+炎龙倒海就已经是很多人喜欢的战术了，到了3rd，由于莉丝的出现，这一战术更加发扬光大了。阿加特开场满CP放一次炎龙倒海，其他人行动之后雪拉天堂之吻提人，阿加特公牛之怒II，莉丝圣洁祝福回50CP+50%HP，公牛的150CP+圣洁祝福的50CP正好是200，又可以满CP来一次，后面的辅助人员只需要给缺HP的回复就行了，考虑到炎龙倒海恐怖的杀伤力，很少有敌人能承受3次以上。该打法十分暴力，由于可以连续发动，打小怪的时候也能使用，这是在深渊很多人喜欢用阿加特带队员们练级的重要原因= = <br>
+        <br>
+        2. 光鬼斩：这已经不是战术了，很多人（包括笔者）都是用这个方法打完的3rd。理查德的光鬼斩拥有极短的ST（光鬼斩、真·光鬼斩、光轮斩、光连斩硬直ST都是7，真·光轮斩和PC版的真·光连斩硬直ST是12，与此对比，其他队员的战技的硬直时间普遍都在30以上，此前攻击效率最高的双连击硬直ST也有25，提妲的导力装甲使用的战技硬直ST为20，唯一的例外是雪拉的狐媚暗随，硬直ST为5，不过雪拉的物理攻击力较弱，该战技耗CP略多，还是不能跟理查德相比），在有时间加速·改以及穆拉援护的前提下，理查德甚至可以实现AT表11连击，加上理查德较高的STR，这种攻击力对于所有的BOSS而言都是十分恐怖的威胁。一般的玩法是给理查德堆速度，开场别人给他放时间加速·改之后就冲出去光鬼斩就行了，不足的CP可以依靠凯文和莉丝的技能补充，或者使用还魂粉。 <br>
+        <br>
+        3. 连锁流：由于尤利娅和穆拉在连锁中的特殊攻击（尤利娅可以对范围内所有敌人攻击两次，穆拉可以对圆心目标攻击两次），加上雪拉的天堂之吻，可以形成一个十分恐怖的输出组合，一般的搭配是尤穆亚雪或是尤穆艾雪，前者用于敌人数量较多站的较分散时，后者用于其他情况，基本打法：开战前调整队伍顺序，确保开始战斗时是按照以下顺序进入：艾丝蒂尔/亚妮拉丝第一，雪拉最后，尤利娅和穆拉在中间，顺序随便。开场时艾丝蒂尔助威增加全队STR/亚妮拉丝陀螺舞把敌人吸到一起，2号把自己跟1号连锁，3号把自己跟1、2号连锁，雪拉天堂之吻把所有人的ST归零，接着3号跟雪拉连锁，2号跟3号、雪拉连锁，1号把四人全部连锁，注意最后几次连锁时的CP消耗，尽量让四人在连锁结束时都能有100CP，四人连锁结束之后全员爆S，这样弄下来绝大多数BOSS都已经倒地了。 <br>
+        <br>
+      4. 暗改神教：ArielSharon大大最先介绍的一种方法。3rd里面魔法的攻击力远没有FC、SC那么强悍，魔法修正简直就是摆设，中后期来说在属性有效率相同的前提下，各魔法的伤害值基本相同，因此大家普遍追求的是魔法的附加效果，就这样，有突出效果的魔法暗物质改成了很多人的最爱。暗物质改本身的伤害修正就很高，而其附加的效果——吸引所有范围内的敌人到中心+大幅降低MOV成为了极为恐怖的技能。很多时候，该魔法使用后敌人统统被限制在角落被我方用远程攻击一一消灭，毫无还手之力，最经典的是第三话银之道的BOSS战</p>
+    </section>
+  <!-- end .content --></article>
+  <footer>
+    <address>Created by &copy;2012 <a href="http://shencore.renren.com/">高晨水水</a> 版权所有 </address>
+  </footer>
+  <!-- end .container --></div>
+</body>
+</html>

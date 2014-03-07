@@ -1,0 +1,270 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FC回路配法</title>
+<script type="text/javascript" src="all/base.htm"></script>
+<script type="text/javascript" src="all/scroll.js"></script>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img { 
+	border: none;
+}
+a:link {
+	color: #42413C;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+.container {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto; 
+}
+header {
+	background-color: #ADB96E;
+}
+
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 780px;
+	float: left;
+}
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; }
+ul.nav {
+	list-style: none; 
+		border-top: 1px solid #666; 
+	margin-bottom: 15px; 
+}
+ul.nav li {
+	border-bottom: 1px solid #666; 
+}
+ul.nav a, ul.nav a:visited { 	padding: 5px 5px 5px 15px;
+	display: block;  
+	width: 160px;   
+	text-decoration: none;
+	background-color: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: #ADB96E;
+	color: #FFF;
+}
+footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;
+	clear: both; 
+}
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+header, section, footer, aside, article, figure {
+	display: block;
+}
+.container .content section h2 {
+	font-family: 微软雅黑;
+}
+.container .content section p {
+	font-family: 微软雅黑;
+}
+.container .sidebar1 .nav li a {
+	font-family: 微软雅黑;
+}
+.container .sidebar1 aside p {
+	font-family: 微软雅黑;
+}
+.container footer p {
+	font-family: 微软雅黑;
+}
+.container aside h4 {
+	font-family: 微软雅黑;
+}
+.container .content h1 {
+	font-family: 微软雅黑;
+}
+.container aside h4 {
+	font-family: 微软雅黑;
+}
+.container footer address {
+	font-family: 微软雅黑;
+}
+.container .content section h3 {
+	font-family: 微软雅黑;
+}
+.container .content section h3 {
+	color: #F00;
+}
+.container .content section p_red {
+	color: #F00;
+}
+.container .content section p_red {
+	font-family: 微软雅黑;
+}
+-->
+</style>
+<!--[if lt IE 9]><script src="./all/html5IE.js"></script><![endif]-->
+</head>
+<body>
+<div class="container">
+  <header>
+    <a href="line1.html#"><img src="pictures/LogoFC.jpg" alt="LOGO" name="Insert_logo"width="180" height="100" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a>    
+  </header>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="index.html">站点首页</a></li>
+        <li><a href="index1.html">FC攻略首页</a></li>
+        <li><a href="10.html">序章</a></li>
+        <li><a href="11.html">第一章</a></li>
+        <li><a href="12.html">第二章</a></li>
+        <li><a href="13.html">第三章</a></li>
+        <li><a href="14.html">终章</a></li>
+        <li><a href="appendix1.html">附录</a></li>
+        <li><a href="line1.html">回路配法教学</a></li>
+        <li><a href="yaosu1.html">要素收集</a></li>
+        <li><a href="epilogue1.html">后记</a></li>
+    </ul>
+    <aside></aside>
+  <!-- end .sidebar1 --></div>
+  <article class="content">
+    <h1>空之轨迹FC回路配法囧解</h1>
+    <section>
+      <h2>作者 ArielSharon</h2>
+      <p>&nbsp;这一次的教程是接着上一次的3RD配法的续集，关于回路配法的基础知识请参阅3rd 、SC的回路教学部分     <br>
+  <br>
+        FC时期魔法流非常突出，因为魔法虽然需要驱动时间，但是驱动时间+硬直时间所费时间普遍小于战技，装上驱动回路后速度更快，而且魔法的伤害较高<br>
+  <br>
+        FC的导力器系统比较特别，导力器上总共6个回路，回路孔无等级设定，普通回路的等级只分为3级。虽然普通回路只有3个等级，但是大多数3级回路的效果与SC,3RD的耀珠差不多，甚至比耀珠还好，比如妨害3的80%打断率<br>
+  <br>
+        PS：FC回路不减属性，所以菜刀可以放心装防御，法师可以放心用魔防，菜刀必备的回路依然是攻击、行动力，法师必备的依然是精神、行动力、驱动、省EP<br>
+  <img src="image/line/line1/d0ce91017438b824728da578.png" width="606" height="602">      
+      <p>下面依旧是每人的回路配法囧解：<br>
+<br>约修亚：FC时期的回路真是相当不错，5-2链双时限定，驱动2由于当时只有3级回路属性值并不显鸡肋，正好短链放攻击，长链合魔法。小约的裸ATS仅次于公主王子，与雪拉相同，而且战技不错，双连击强力菜刀输出，绝影/魔眼强制命中+范围AT DELAY，漆黑之牙惟一的全屏S技，可以说是物魔双修的典型<br>
+<br>
+序章和一章小约可以轻松合出暗影之矛（没有耀片开孔合回路就去刷羊，序章可以把小艾小约雪拉的孔全开并且塞满回路），这里HP1到一章换成精神1<br>
+<img src="image/line/line1/4199856ecf6e1cfd80cb4a79.jpg" width="750" height="562"><br>
+<br>
+小约是最早能合出炽炎地狱的人，二章用鹰目就可以<br>
+<img src="image/line/line1/1318212300f21b699358077e.jpg" width="750" height="562"><br>
+<br>
+三章、终章其实配法差不多，只是回路升级了三章开始小约就可以多出孔放攻击了，小约FC时期魔眼/绝影强制命中，死之刃1+魔眼刷羊相当不错<br>
+<img src="image/line/line1/ca1eb02208a741d4d6cae279.jpg"><br>
+<br>
+用小约放墙有点浪费啊<br>
+<img src="image/line/line1/567faf446d50576b500ffe78.jpg"><br>
+<br>
+<br>
+
+
+<p>艾斯蒂尔：FC时期导力器4-3链不如小约，到SC小艾回路链无限制的优点就显现出来了，比小约好了很多，小艾各项数值中庸，在FC,SC主要是辅助，至于偏菜刀还是偏法师看个人喜好和队伍中其他人的配置<br>
+<br>
+序章和一章暗影之矛合法，一章HP1换成精神1<br>
+<img src="image/line/line1/117a84af9c78eeeb7dd92a7d.jpg"><br>
+<br>
+小艾三章开始可以合出炽炎地狱<br>
+<img src="image/line/line1/10a10673c772fe3b8601b07e.jpg"><br>
+<br>
+<br>
+</p>
+
+<p>雪拉：FC时期导力链一般，5-2链双风限定，由于风系回路在FC不是必备，双风限定显得鸡肋，但是雪拉的一招天堂之吻就决定了她从FC到3RD的BUG人物地位<br>
+<br>
+序章某支线任务可以拿妨害2，雪拉可以合出风之领域，之后就风之领域一直用到能合出炽炎地狱吧，刷羊时换成暗影之矛,有了精神后把攻击换成精神<br>
+<img src="image/line/line1/aa531229ff5badd998250a46.jpg"><br>
+<br>
+其实美臭这个回路潜力无限。。。<br>
+<img src="image/line/line1/536883188c86992034fa4144.jpg"><br>
+<br>
+<br>
+</p>
+
+<p>科洛丝：FC时期导力器虽是一链，但是3水限定使得公主的回路配法十分单一，二章出不了炽炎，魔攻主要靠冰蓝，终章可以合出炽炎，公主的斗魂和光明在FC时期都是相当实用的战技，特别是斗魂<br>
+<br>
+配法单一，只有天台洛伦斯战可以把省EP3换成妨害3<br>
+<img src="image/line/line1/195a45223bdf6d834723e86d.jpg"><br>
+<br>
+<br>
+</p>
+
+<p>王子：一链幻限定，自由度比公主高了许多，ATS与公主相同，是全员最高，战技虽比不上公主，在FC也还算实用<br>
+<br>
+一章以合出地狱之门为优先，石化之刃配合他的范围技清小怪不错，想合更多魔法可以把石化之刃换掉<br>
+<img src="image/line/line1/ecb17a66c8b54403aa184c72.jpg"><br>
+<br>
+王子一章也能合混沌烙印<br>
+<img src="image/line/line1/c4632f087c9a5217e8248872.jpg"><br>
+<br>
+终章王子配法,其实到终章几个法系角色的配法都差不多，都是炽炎+回复复+冰蓝，想放墙就用防御3合出大地之墙+大地之枪，想双修的就放个攻击<br>
+<img src="image/line/line1/584453f455702ffef3d38571.jpg"><br>
+<br>
+<br>
+</p>
+
+<p>提妲：菜刀LOLI一只，回复弹、烟幕弹都很实用，只是血少了些,回路就按菜刀的来吧，刷羊时合个暗影之矛，或者普攻+命中3+死之刃<br>
+<img src="image/line/line1/a64fba45df17991886947376.jpg"><br>
+<br>
+<img src="image/line/line1/975d5a8b45b0f435c9fc7a77.jpg"><br>
+<br>
+<br>
+</p>
+
+<p>阿加特：纯菜刀一只，战技中螺旋、龙骑ST长达50...比别人放2个魔法的时间还长...果然是重剑，公牛之怒FC只加50CP，实用度一般<br>
+<img src="image/line/line1/b1b4324cd99994ded62afc6e.jpg"><br>
+<br>
+<br>
+</p>
+
+<p>金：纯菜刀一只，龙神FC加STR/DEF是30%，算一般，地限定在FC没什么问题，既然是菜刀孔空着也没什么问题,如果打算用他放墙就加个驱动2<br>
+<img src="image/line/line1/1c6f21f7e8ccd505730eec76.jpg"><br>
+</p>
+    </section>
+    <section></section>
+    <section> </section>
+  <!-- end .content --></article>
+  <footer>
+    <p>&nbsp;</p>
+    <address>
+      Created by &copy;2012 <a href="http://shencore.renren.com/">高晨水水</a> 版权所有 
+    </address>
+  </footer>
+  <!-- end .container --></div>
+</body>
+</html>

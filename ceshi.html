@@ -1,0 +1,60 @@
+﻿<html> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="Author" content="&#39118;&#21535;" /> 
+<title>环境测试</title> 
+<style type="text/css">
+body,div,ul,ol,li,h1,h2,p,button{margin:0;padding:2px}body{color:#000;background:#fff;font:13px/1.5 "microsoft yahei",Verdana,tahoma,Calibri,sans-serif}#info{width:497px;height:172px;border:1px solid #CCC;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;resize:none;font:13px/1.5 Monaco,"Andale Mono","Lucida Console","Bitstream Vera Sans Mono","Courier New",monospace,arial,sans-serif;padding:5px}
+</style>
+</head>
+<body>
+
+<div id="outpub"></div>
+
+<script type="text/javascript">
+(function(window,document,ua){
+var app = { 
+	version: (ua.match( /.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/ ) || [])[1],  //提取浏览器版本
+	msie: /msie/.test(ua) && !/opera/.test(ua),  //判断是否 IE 浏览器
+	write: function($){document.getElementById("outpub").innerHTML=$}, //封装写入
+	os : function(){
+	if (ua.indexOf("nt 5.1") > -1){
+	return "Windows XP (最好升级到 Vista 或者 Windows 7,如果不能升级系统也请安装微软雅黑字体)"
+	}else if(ua.indexOf("nt 6.0") > -1){
+	return "Windows Vista (建议升级到 Windows 7)"
+	}else if(ua.indexOf("nt 6.1") > -1){
+	return "Windows 7 "
+	}else if(ua.indexOf("nt 6.2") > -1){
+	return "Windows 8"
+	}else{
+	return  this.version <= '6.0' ? "未知的操作系统，可能你的系统太旧。" : "未知的操作系统，可能你的系统太新。";
+	//如果上面全部nt版本 (windows 内核版本) 无效，就判断高于6.0版本就是windows 8 以后  低于就是win98了吧??
+	}
+	},
+	screen:{
+	width: window.screen.width,
+	height:window.screen.height
+	},
+	is_flash: function(){
+	 try{
+	 var flash = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+	  return '已安装Flash播放器！(有可能用到Flash播放)';
+	 }catch(e){
+	 return '未安装Flash播放器！(有些特殊效果可能不能显示)'
+	 }
+	},
+	UA:window.navigator.userAgent
+};
+
+var outpub =[
+'操作系统：'+app.os(),
+'浏览器版本：'+app.version  +( app.version < 7 ? ' (浏览器版本过低建议升级浏览器！)' : ' (浏览器版本符合要求！)' ),
+'显示器分辨率：'+app.screen.width +'*'+ app.screen.height +  ( app.screen.width < 1280 ? ' (分辨率过低，建议提高到宽度 1280 以上！) ' : ' (分辨率完全符合要求！)') ,
+'Flash播放器：'+app.is_flash(),
+'客户端信息：'+ app.UA
+]
+app.write('<textarea id="info">'+outpub.join("\r\n")+'</textarea>');
+})(window,document,window.navigator.userAgent.toLowerCase())
+
+</script>
+</body>

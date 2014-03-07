@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AT理论</title>
+<script type="text/javascript" src="all/base.htm"></script>
+<script type="text/javascript" src="all/scroll.js"></script>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/* ~~ 元素/标签选择器 ~~ */
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img { 
+	border: none;
+}
+/* ~~ 站点链接的样式必须保持此顺序，包括用于创建悬停效果的选择器组在内。 ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+/* ~~ 此固定宽度容器包含所有其它块 ~~ */
+.container {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto; 
+}
+/* ~~ 标题未指定宽度。它将扩展到布局的完整宽度。 ~~ */
+header {
+	background-color: #ADB96E;
+}
+
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 780px;
+	float: left;
+}
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; }
+
+/* ~~ 导航列表样式（如果选择使用预先创建的 Spry 等弹出菜单，则可以删除此样式） ~~ */
+ul.nav {
+	list-style: none; 
+		border-top: 1px solid #666; 
+	margin-bottom: 15px; 
+}
+ul.nav li {
+	border-bottom: 1px solid #666; 
+}
+ul.nav a, ul.nav a:visited { 	padding: 5px 5px 5px 15px;
+	display: block;  
+	width: 160px;   
+	text-decoration: none;
+	background-color: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ 脚注 ~~ */
+footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;
+	clear: both; 
+}
+/* ~~ 其它浮动/清除类 ~~ */
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+header, section, footer, aside, article, figure {
+	display: block;
+}
+.container .content section h2 {
+	font-family: 微软雅黑;
+}
+.container .content section p {
+	font-family: 微软雅黑;
+}
+.container .sidebar1 .nav li a {
+	font-family: 微软雅黑;
+}
+.container .sidebar1 aside p {
+	font-family: 微软雅黑;
+}
+.container footer p {
+	font-family: 微软雅黑;
+}
+.container aside h4 {
+	font-family: 微软雅黑;
+}
+.container .content h1 {
+	font-family: 微软雅黑;
+}
+.container aside h4 {
+	font-family: 微软雅黑;
+}
+.container footer address {
+	font-family: 微软雅黑;
+}
+.container .content section h3 {
+	font-family: 微软雅黑;
+}
+.container .content section h3 {
+	color: #F00;
+}
+.container .content section p_red {
+	color: #F00;
+}
+.container .content section p_red {
+	font-family: 微软雅黑;
+}
+-->
+</style>
+<!--[if lt IE 9]>
+<script src="./all/HTML5IE.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container">
+  <header>
+    <a href="at.html#"><img src="pictures/Logo.jpg" alt="在此处插入徽标" name="Insert_logo"width="180" height="100" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a>
+  </header>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="index.html">站点首页</a></li>
+        <li><a href="index1.html">FC攻略首页</a></li>
+        <li><a href="home.html">SC攻略首页</a></li>
+        <li><a href="index3.html">3rd攻略首页</a></li>
+        <li><a href="appendix1.html">FC附录页面</a></li>
+        <li><a href="fulu.html">SC附录I页面</a></li>
+        <li><a href="appendix3.html">3rd附录页面</a></li>
+    </ul>
+    <aside></aside>
+  <!-- end .sidebar1 --></div>
+  <article class="content">
+    <h1>空之轨迹三部曲 行动值（AT）最终理论</h1>
+    <section>
+      <h3>作者 反转博士</h3>
+      <p> <strong>AT值（Action Time）</strong><br>
+        AT值是决定角色行动顺序的变量。每个角色在开场的时候都要初始化ST值并计算AT值，当角色行动完毕之后，他的AT值就会增加，然后系统重新排列行动顺序，AT值小的排在前面，之后AT值开始流逝，当角色的AT值降为0时就轮到他行动。如此周而复始。<br>
+        <br>
+        <strong>ST值（Skill Time）</strong><br>
+        ST值是计算AT值的因数之一，每种行动方式都被设定了固有的ST值。<br>
+        <br>
+        <strong>SPD值</strong><br>
+        SPD值是产生AT值的因数之二。<br>
+        <br>
+        <strong>AT值计算公式</strong><br>
+        <strong>ST/(SPD%)*(驱动系数)=AT</strong><br>
+        AT值取整数，驱动系数通常为100%，魔法蓄力的驱动系数受驱动回路的影响。<br>
+        <br>
+        <strong>魔法的AT值</strong><br>
+        魔法的AT值分为两部分，蓄力值和冷却值，总的AT值是两者之和。<br>
+        <br>
+        <strong>驱动回路</strong><br>
+        驱动回路只影响魔法蓄力的驱动系数，不影响魔法冷却的驱动系数。<br>
+        驱动1的作用是驱动系数变为60%<br>
+        驱动2的作用是驱动系数变为30%<br>
+        刻耀珠的作用是驱动系数变为5%<br>
+        <br>
+        <strong>S技的AT值</strong><br>
+        S技可以无视行动顺序使用，无视顺序使用S技后的AT值等于此技能的AT值。<br>
+        <br>
+        <strong>天堂之吻（AT Advence）</strong><br>
+        范围内的角色AT值强制归零，相对行动顺序不变。<br>
+        <br>
+        <strong>解除驱动</strong><br>
+        包括蓄力被中断和使用者染上负面状态两种情况，被解除的角色仍受到魔法蓄力AT值的延迟。<br>
+        <br>
+        <strong>S-Break</strong><br>
+        包括CP值下降和使用者染上负面状态两种情况，被中断的角色仍受到S技固有的延迟。<br>
+        <br>
+        <strong>负面状态</strong><br>
+        染上石化、冷冻、气绝、睡眠状态的角色，只会原地移动，AT值计算方法不变。<br>
+        <br>
+        <strong>AT Delay</strong><br>
+        目标增加固定的ST值，按照目标的SPD值计算延迟的AT值。<br>
+        <br>
+        <strong>AT值计算与能力升降的优先级</strong><br>
+        AT值计算的优先级高于能力升降、变胖、AT Advence，对自身使用加SPD值的技能，并不会减少此技能的AT值。AT Delay的优先级高于能力升降、变胖。<br>
+        <br>
+        <strong>AT值相同的情况</strong><br>
+        如果两个角色的AT值相同，后达到此值的角色行动顺序排在前面。<br>
+        <br>
+        <strong>状态持续时间</strong><br>
+        状态持续时间以战场上流逝的AT值来计量，每种行动方式附加的状态都被设定了固有的持续时间。<br>
+        <br>
+        <strong>开场行动顺序</strong><br>
+        开场行动顺序与角色的SPD值、团队平均SPD值、队伍排列顺序有关，排在前面的队员先行动的可能性大。<br>
+        <br>
+        <strong>SPD等于零的情况</strong><br>
+        当SPD等于零时，任何行动方式的AT值都等于零。<br>
+        <br>
+        <strong>其他<br>
+        </strong>复活的角色在原有AT值的基础上加20 ST的延迟。被召唤的角色在召唤者AT值的基础上加20 ST的延迟。分裂出的角色AT值与本体相同。Vanish状态不影响AT值，持续时间与AT条滚动次数有关。<br>
+        <br>
+        <strong>基本行动方式ST值</strong><br>
+        <strong>移动———20<br>
+        普通攻击—30<br>
+        使用道具—20<br>
+      装甲攻击—20</strong> /水水注：装甲攻击是指3rd中的导力装甲，在SC中没有出现。</p>
+    </section>
+    <section></section>
+    <section>
+      <h3>空之轨迹3rd基于AT理论的SPD计算表</h3>
+      <p>作者：★神风快斗★</p>
+      <p>//水水注：请先阅读博士的AT理论，并理解空轨AT、APD的计算方式之后阅读本表，否则可能会一头雾水。//<img src="image/at01.png" width="750" height="387"></p>
+      <p><img src="image/at02.png" width="430" height="683"></p>
+    </section>
+  <!-- end .content --></article>
+  <footer>
+    <address>
+      Created by &copy;2012 <a href="http://shencore.renren.com/">高晨水水</a> 版权所有 
+    </address>
+  </footer>
+  <!-- end .container --></div>
+</body>
+</html>

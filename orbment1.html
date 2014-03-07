@@ -1,0 +1,1088 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FC导力器和魔法系统介绍</title>
+<script type="text/javascript" src="all/base.htm"></script>
+<script type="text/javascript" src="all/scroll.js"></script>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img { 
+	border: none;
+}
+a:link {
+	color: #42413C;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+.container {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto; 
+}
+header {
+	background-color: #ADB96E;
+}
+
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #EADCAE;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 780px;
+	float: left;
+}
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; }
+ul.nav {
+	list-style: none; 
+		border-top: 1px solid #666; 
+	margin-bottom: 15px; 
+}
+ul.nav li {
+	border-bottom: 1px solid #666; 
+}
+ul.nav a, ul.nav a:visited { 	padding: 5px 5px 5px 15px;
+	display: block;  
+	width: 160px;   
+	text-decoration: none;
+	background-color: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: #ADB96E;
+	color: #FFF;
+}
+footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+	position: relative;
+	clear: both; 
+}
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+header, section, footer, aside, article, figure {
+	display: block;
+}
+.container .content section h2 {
+	font-family: 微软雅黑;
+}
+.container .content section p {
+	font-family: 微软雅黑;
+}
+.container .sidebar1 .nav li a {
+	font-family: 微软雅黑;
+}
+.container .sidebar1 aside p {
+	font-family: 微软雅黑;
+}
+.container footer p {
+	font-family: 微软雅黑;
+}
+.container aside h4 {
+	font-family: 微软雅黑;
+}
+.container .content h1 {
+	font-family: 微软雅黑;
+}
+.container aside h4 {
+	font-family: 微软雅黑;
+}
+.container footer address {
+	font-family: 微软雅黑;
+}
+.container .content section h3 {
+	font-family: 微软雅黑;
+}
+.container .content section h3 {
+	color: #F00;
+}
+.container .content section p_red {
+	color: #F00;
+}
+.container .content section p_red {
+	font-family: 微软雅黑;
+}
+-->
+</style>
+<!--[if lt IE 9]><script src="./all/html5IE.js"></script><![endif]-->
+</head>
+<body>
+<div class="container">
+  <header>
+    <a href="orbment1.html#"><img src="pictures/LogoFC.jpg" alt="LOGO" name="Insert_logo"width="180" height="100" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a>    
+  </header>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="index.html">站点首页</a></li>
+        <li><a href="index1.html">FC攻略首页</a></li>
+        <li><a href="10.html">序章</a></li>
+        <li><a href="11.html">第一章</a></li>
+        <li><a href="12.html">第二章</a></li>
+        <li><a href="13.html">第三章</a></li>
+        <li><a href="14.html">终章</a></li>
+        <li><a href="appendix1.html">附录</a></li>
+        <li><a href="line1.html">回路配法教学</a></li>
+        <li><a href="yaosu1.html">要素收集</a></li>
+        <li><a href="epilogue1.html">后记</a></li>
+    </ul>
+    <aside></aside>
+  <!-- end .sidebar1 --></div>
+  <article class="content">
+    <h1>空之轨迹FC 导力器和魔法详细介绍</h1>
+    <section>
+<p><strong><font size="4"><font color="#0000ff">&mdash;&mdash;主要内容目录&mdash;&mdash;</font></font></strong><br>
+<br>
+<strong><a href="orbment1.html#p1">○基本概念</a><br>
+<a href="orbment1.html#p2">○配魔法实例教程</a><br>
+<a href="orbment1.html#p3">○部分魔法配法举例</a><br>
+<a href="orbment1.html#p4">○导力魔法表</a><br>
+<a href="orbment1.html#p5">○结晶回路表</a><br>
+<a href="orbment1.html#p6">○各角色的导力器构造特点</a><br>
+<a href="orbment1.html#p7">○其他相关问题：</a></strong><br>
+　<a href="orbment1.html#p9">属性攻击和属性有效率</a><br>
+　<a href="orbment1.html#p10">序章的工房研修问题</a><br>
+　<a href="orbment1.html#p11">关于SEPITH UP奖励</a><br>
+　<a href="orbment1.html#p12">天使羊波波</a><br>
+　<a href="orbment1.html#p13">开封结晶孔与EP值上限</a><br>
+<br>
+<br>
+</p>
+
+<p><strong><font size="4"><font color="#0000ff"><a name="p1">&mdash;&mdash;基本概念（新手必读，对游戏较熟悉的玩家可跳过）&mdash;&mdash;</a></font></font></strong><br>
+<br>
+<strong>◆《导力器》Orbment</strong><br>
+<br>
+&ldquo;导力&rdquo;是空轨世界中的能源，类似于现实生活中的&ldquo;电&rdquo;。游戏中任何使用导力来工作的机械装置，都叫做导力器。<br>
+而本文所讨论的导力器，特指我们的主角们携带的用于辅助战斗的战术导力器。下文中若非特别说明，&ldquo;导力器&rdquo;均指战术导力器。<br>
+在游戏中，选择<font color="#0000ff">Orbment</font>一页，即可看到各个队员的导力器，并进行<font color="#008000">回路</font>的安放等操作。<br>
+导力器可以强化队员的战斗能力，并且也是施放<font color="#008000">导力魔法</font>的必需品。<br>
+<br>
+<strong>◆《七耀石》Septium</strong><br>
+<br>
+空轨世界中的矿物名。<br>
+<br>
+<strong>◆《耀晶片》Sepith</strong><br>
+<br>
+七耀石的碎片。是制作<font color="#008000">结晶回路</font>的原料。另外开封<font color="#008000">结晶孔</font>也需要花费耀晶片。<br>
+耀晶片有七种属性：<font color="#a0522d">地</font>、<font color="#0000ff">水</font>、<font color="#ff0000">火</font>、<font color="#008000">风</font>、时、<font color="#ffa500">空</font>、<font color="#808080">幻</font>。<br>
+各属性的代表色为：<font color="#a0522d">地&mdash;棕色(棕黄色)</font>，<font color="#0000ff">水&mdash;蓝色</font>，<font color="#ff0000">火&mdash;红色</font>，<font color="#008000">风&mdash;绿色</font>，时&mdash;黑色，<font color="#ffa500">空&mdash;金色(黄色)</font>，<font color="#808080">幻&mdash;银色(白色)</font>。<br>
+游戏中，耀晶片需要通过战斗从敌人身上获得。各种敌人身上都带有一定量的各种耀晶片，将其打倒即可获得。<br>
+平时可以在<font color="#0000ff">Items</font>一页中的右上角看到你拥有的各种耀晶片的数量。<br>
+耀晶片可以在各个店铺换成米拉，但是<font color="#ff0000">用米拉无法购买耀晶片</font>。所以如非特别需要，尽量少用耀晶片换钱，把耀晶片留着合成重要的<font color="#008000">回路</font>吧。<br>
+<br>
+<strong>◆《结晶回路》Quartz</strong><br>
+<br>
+简称<strong>回路</strong>。<br>
+用耀晶片加工制作的物品。是导力器的重要部件。将结晶回路安放在导力器上，通过各回路的相互作用，导力器才能工作。<br>
+回路可以在<font color="#008000">工房</font>花费耀晶片合成，或者通过其他途径得到。<br>
+例如：<font color="#0000ff">●</font>HP1、<font color="#ff0000">●</font>攻击2、<font color="#a0522d">●</font>防御3、<font color="#008000">●</font>睡眠之刃、<font color="#ffa500">●</font>鹰目等物品都是回路。<br>
+将回路安放在导力器的<font color="#008000">结晶孔</font>上，可以让导力器发挥特殊作用（如增强攻击力、增加HP上限等），并让队员可以使用特定的<font color="#008000">魔法</font>。<br>
+平时可以在<font color="#0000ff">Items</font>--&gt;<font color="#0000ff">回路</font>一页中查看自己已有但还没有安装上去的回路。<br>
+<br>
+<font color="#ff0000">*请不要把&ldquo;<strong>结晶回路</strong>&rdquo;和&ldquo;<strong>结晶链</strong>&rdquo;的概念弄混。</font><br>
+<br>
+<strong>◆《结晶孔》Slot</strong><br>
+<br>
+导力器上面可以用来安放回路的圆孔，叫做结晶孔。FC的导力器共有6个孔。如下图艾丝蒂尔的导力器，有①～⑥6个结晶孔。<br>
+一开始导力器的孔并没有全部开封。没有开封的孔不能安放回路，需要在<font color="#008000">工房</font>中进行开封。开封可以使导力器安放更多回路，并能<font color="#0000ff">提升EP上限</font>。<br>
+<br>
+<strong>◆《结晶链》Line</strong><br>
+<br>
+将各个结晶孔相连的线路。结晶链都是从导力器中央的结晶孔作为起点。例如下图艾丝蒂尔的导力器，共有2条结晶链：从中央孔①开始往左：①-②-③-④是第1条结晶链，它的长度是4个孔；从中央孔开始往右：①-⑥-⑤是第2条结晶链，它的长度是3个孔。<br>
+不同的队员，导力器结构也不一样，结晶链的条数和长度各有不同。这也限定了哪些队员适合使用魔法，哪些不适合。<br>
+<br>
+<font color="#ff0000">*请不要把&ldquo;<strong>结晶回路</strong>&rdquo;和&ldquo;<strong>结晶链</strong>&rdquo;的概念弄混。</font><br>
+<br>
+<strong>◆《导力器示意》</strong><br>
+<br>
+艾丝蒂尔的导力器<br>
+<br>
+<font face="宋体">　　　④<br>
+
+　 ╱<br>
+③　　　　　⑤<br>
+│　　　　　│<br>
+│　　①　　│<br>
+│ ╱　　╲ │<br>
+②　　　　　⑥</font><br>
+<br>
+<strong>◆《导力魔法》Orbal Arts</strong><br>
+<br>
+简称<strong>魔法（Arts）</strong>。和物理攻击、战技相对的一种攻击方式。它可以攻击到战场上任何位置，没有射程限制，但是使用魔法需要消耗<font color="#008000">EP值</font>。<br>
+空轨系列中，魔法不是人物升级学会的（那是战技），而是用结晶回路配出来的。如果没有安放回路，将无法使用任何魔法。通过安放在导力器上的回路组合，便可以使用一定种类的魔法，这就是通常所说的配魔法。<br>
+当前该人物可以使用的魔法，可以在<font color="#0000ff">Orbment</font>画面的左下方查看。<br>
+高级的魔法需要用高级的回路才能配出，而<font color="#0000ff">高级回路需要游戏进行到后期才能获得</font>。因此游戏前期将无法配出较高级的魔法。<br>
+战斗中，点击&ldquo;<font color="#0000ff">魔法</font>&rdquo;按钮，即可选择该角色能够使用的魔法进行施放。<br>
+<br>
+魔法不同于普通攻击和战技，不能立即发出，而必须进行一段时间的咏唱（驱动），才能发出。在咏唱期间，可能会被敌人打断。装备&ldquo;驱动&rdquo;系回路可以缩短魔法的咏唱时间。<br>
+我方部分角色也拥有可以解除驱动的战技（如金刚击、拘束之鞭、精准射击等），可以用来打断敌人发动中的魔法或技能。<br>
+除了解除驱动之外，直接将对方封魔，也可以解除掉其正在发动的魔法。（当然，施加气绝/冻结/石化/即死，也是可以解除的）<br>
+若魔法驱动中施法者被混乱，魔法发出时还是会攻击到原定目标。<br>
+<br>
+攻击性魔法的威力，和人物的ATS值有关。ATS越高的角色，使用攻击性魔法造成的伤害越大。<br>
+而对敌方魔法的防御力，和人物的ADF值有关。<br>
+回复、辅助、妨害性魔法的效果一般是固定的，和ATS无关。<br>
+<br>
+<strong>◆《EP》Energy Point</strong><br>
+<br>
+导力器中所储存的能量值。使用魔法需要消耗EP。<br>
+要补充EP，可以使用EP填充剂。某些地方有导力回复装置，可以用来回复HP和EP。在旅馆或家里休息也可以。人物升级时，会自动将HP和EP补满。<br>
+注意：不同于其他一些RPG游戏中的&ldquo;MP&rdquo;（魔法值）的概念，空轨中EP上限由导力器决定，跟人物等级是没有关系的。<br>
+<font color="#ff0000">角色升级不会提升EP上限。要提升EP上限，必须在工房开封新的结晶孔。</font><br>
+<br>
+<strong>◆《导力器工房》Orbment Factory</strong><br>
+<br>
+简称<strong>工房</strong>。<br>
+游戏中用来给导力器开孔和合成结晶回路的地方。在地图上以<font color="#ff8000">橙色</font>的区域表示。一般每个城市都有一个工房。<br>
+在工房中和工作人员说话，选择&ldquo;<font color="#0000ff">改造·换钱</font>&rdquo;即可进行开封、合成回路、把耀晶片换钱等操作。<br>
+<br>
+<br>
+</p>
+
+<p><strong><font color="#0000ff" size="4"><a name="p2">&mdash;&mdash;配魔法实例教程&mdash;&mdash;</a><br>
+<br>
+</font></strong>如何使用回路的特殊作用，应该很容易理解。把"攻击"系列回路安放在导力器上，即可提升角色的物理攻击力（STR）。安放"EP"系列回路，可以提升一定EP上限等等。具体请见下文的<font color="#0000ff">《结晶回路表》</font>。<br>
+<br>
+但是用回路配魔法似乎不是那么好理解了。有些人玩到中期，却仍然只会火之矢、风之轮、石之锤这几个可怜的最初级魔法；有些人到了后期，高级的回路也有了，但是看着魔法表里壮观的高级魔法自己却配不出来。<br>
+<br>
+这一部分将用实例来讲解配魔法的原理和步骤。<br>
+<br>
+先看几个重要内容。<br>
+<br>
+【回路的属性和属性值】<br>
+<br>
+每种回路都有自己的属性。回路的颜色就代表了它的属性。例如"<font color="#ff0000">●</font>攻击1""<font color="#ff0000">●</font>封技之刃"等回路是<font color="#ff0000">红色</font>，它们是<font color="#ff0000">火</font>属性回路；"<font color="#0000ff">●</font>HP3""<font color="#0000ff">●</font>精神2""<font color="#0000ff">●</font>冻结之刃""<font color="#0000ff">●</font>治愈"等回路是<font color="#0000ff">蓝色</font>，它们是<font color="#0000ff">水</font>属性回路。回路属性的代表色，和耀晶片一样也是<font color="#a0522d">棕地</font>、<font color="#0000ff">蓝水</font>、<font color="#ff0000">红火</font>、<font color="#008000">绿风</font>、黑时、<font color="#ffa500">金空</font>、<font color="#808080">银幻</font>。<br>
+各种回路都有各自的属性值。例如"<font color="#ff0000">●</font>攻击1"的属性值是"<font color="#ff0000">火</font>1"，"<font color="#ff0000">●</font>攻击2"的属性值是"<font color="#ff0000">火</font>3"，"<font color="#808080">●</font>EP1"的属性值是"时1<font color="#ffa500">空</font>1<font color="#808080">幻</font>2"。属性值这个概念，是和配魔法密切相关的。具体见下文的配魔法实例。<br>
+<br>
+【结晶孔的属性限定】<br>
+<br>
+Orbment画面里，选择艾丝蒂尔，可以看到她的导力器，每个结晶孔都标明"可装入全属性"。这表示这些孔里面可以安放任何回路。再看约修亚的导力器，会发现有两个孔的标注是"可装入时属性"。这两个孔就是有属性限定的孔。约修亚的这两个孔里面，只能装入时属性的回路，也就是"行动力"系列、"驱动"系列、"暗之刃"、"死之刃1"、"死之刃2"这些中的一种。而其他的回路都不能装在这两个孔里面。除了艾丝蒂尔以外，其他所有队员的导力器上都有少数属性限定孔。这从一定程度上限制了回路的安放和各人能用的魔法种类。<br>
+<br>
+【回路的分类】<br>
+<br>
+有时你可能会注意到，即使某个回路符合某个结晶孔的属性限定，还是无法装上，会显示"同系统的结晶回路不能同时装备"。这是因为回路其实是按功能分为若干类的，同类的回路，一个人的导力器上只能装一个。<br>
+例如所有的攻击回路都是一类的。所以一个队员只能安装一个攻击回路。例如已经装了一个攻击3，就不能再装一个攻击3或者攻击2。<br>
+又如所有的XX之刃也是一类的，一个队员只能安装一个XX之刃回路。例如已经装了一个石化之刃，就不能再装一个混沌之刃。<br>
+不过还有一些回路，是没有安装限制的，即使是完全同样的回路，也可以给同一个人装上。例如两个治愈，可以给一个人装上。<br>
+回路的分类详见下文回路表。<br>
+<br>
+下面开始例子。<br>
+<br>
+【例0-a】给艾丝蒂尔配出单体攻击魔法"火之矢"。<br>
+<br>
+由于FC里面小艾和小约几乎一直在队中，我们主要拿他们两个来进行教程。<br>
+从魔法表中查到，"火之矢"的"必要属性值"为"<font color="#ff0000">火</font>1"。<br>
+下面选用"<font color="#ff0000">●</font>攻击1"回路，把它装在小艾的任何一个结晶孔上。因为"<font color="#ff0000">●</font>攻击1"的属性值是"<font color="#ff0000">火</font>1"，满足"火之矢"的必要属性值的要求，所以现在小艾就可以使用"火之矢"魔法了。<br>
+<br>
+【例0-b】继续给小艾配出单体攻击魔法"水之矢"/"石之锤"/"风之轮"/"心灵之霞"。<br>
+<br>
+这些魔法的必要属性值分别为<font color="#0000ff">水</font>1/<font color="#a0522d">地</font>1/<font color="#008000">风</font>1/时1。因此再分别给小艾装上"<font color="#0000ff">●</font>HP1"（<font color="#0000ff">水</font>1）/"<font color="#a0522d">●</font>防御1"（<font color="#a0522d">地</font>1）/"<font color="#008000">●</font>魔防1"（<font color="#008000">风</font>1）/"●行动力1"（时1），就能使用相应的魔法了。<br>
+<br>
+这几个魔法是各属性的最初级魔法。配置要求是最低的。只要装有相应属性的回路，就可以使用。<br>
+<br>
+【例1】给约修亚配出单体辅助魔法"时间加速·改"（时9）。<br>
+<br>
+这个魔法用一个回路将无法配出，因为没有任何单一回路的属性值达到9个时。必须用2个以上的回路。而且由于前面说过的限制，不能使用●行动力3（时5）+●行动力3（时5）或●行动力3（时5）+●行动力2（时3）+●行动力1（时1）这样的组合。我们可以选择"●行动力2""●驱动2"和"●暗之刃"，它们的属性值都是时3，加起来正好是时9。<br>
+<br>
+注意：如果用多个回路配某个魔法，<font color="#ff0000">必须要将这些回路装在同一条结晶链上</font>。在这个实例中，必须把行动力2、驱动2和暗之刃都装在左边的5孔链上。右边的2孔链不够长。如果分开装在两边，那么是无法配出来的。<br>
+<font face="宋体"><br>
+　　　●暗之刃　　　　　　　●暗之刃<br>
+　 ╱　　╲　　　　　　　╱　　╲<br>
+○　　　　　○　　　　○　　　　　○<br>
+│　　　　　　　　　　│　　　　<br>
+│　　●行动力2 　　　│　　●行动力2<br>
+│ ╱　　╲ 　　　　　│ ╱　　╲　<br>
+●驱动2 　　○　　　　○　　　　　●驱动2<br>
+</font><br>
+　 可以配出　　　　　　　无法配出<br>
+<br>
+【例2-a】给小艾配出火系中圆攻击魔法"火山之咆哮"（<font color="#ff0000">火</font>8<font color="#a0522d">地</font>4<font color="#ffa500">空</font>2）<br>
+<br>
+大多数的范围魔法，仅用一种属性值是配不出来的，必须要由多种属性值配合。<br>
+如果已经进行到终章，那么可以选择：<br>
+<font color="#ff0000">●</font>攻击３　　<font color="#ff0000">火</font>５<br>
+<font color="#ff0000">●</font>必杀之刃　<font color="#ff0000">火</font>３<br>
+<font color="#a0522d">●</font>防御３　　　　<font color="#a0522d">地</font>５<br>
+<font color="#ffa500">●</font>省ＥＰ２　　　　　<font color="#ffa500">空</font>３时２<font color="#808080">幻</font>２<br>
+————————————————<br>
+　总和　　　<font color="#ff0000">火</font>８<font color="#a0522d">地</font>５<font color="#ffa500">空</font>３…………满足<font color="#ff0000">火</font>８<font color="#a0522d">地</font>４<font color="#ffa500">空</font>２<br>
+将攻击3、必杀之刃、防御3、省EP2安装在同一条结晶链上，即可配出该魔法。<br>
+<br>
+如果只进行到第三章，那么将无法获得防御3，这时需要较多的回路：<br>
+<font color="#ff0000">●</font>攻击３　　<font color="#ff0000">火</font>５（注：在红莲之塔可以捡到）<br>
+<font color="#ff0000">●</font>必杀之刃　<font color="#ff0000">火</font>３<br>
+<font color="#a0522d">●</font>防御２　　　　<font color="#a0522d">地</font>３<br>
+<font color="#808080">●</font>阳炎　　　　　<font color="#a0522d">地</font>２　　　　<font color="#808080">幻</font>３<br>
+<font color="#ffa500">●</font>省ＥＰ２　　　　　<font color="#ffa500">空</font>３时２<font color="#808080">幻</font>２<br>
+————————————————<br>
+　总和　　　<font color="#ff0000">火</font>８<font color="#a0522d">地</font>５<font color="#ffa500">空</font>３…………满足<font color="#ff0000">火</font>８<font color="#a0522d">地</font>４<font color="#ffa500">空</font>２<br>
+但是这时所需的回路总数已达5个，超过了小艾最长结晶链的长度，因此不到终章的话小艾无法配出"火山之咆哮"。<br>
+<br>
+注意：带有<font color="#ff0000">火</font>、<font color="#a0522d">地</font>属性值的回路种类很少。除了刃回路和特殊回路，普通回路各只有1种（攻击；防御）。不像<font color="#008000">风</font>有魔防、回避和妨害3种，<font color="#0000ff">水</font>也有HP和精神2种，时<font color="#ffa500">空</font><font color="#808080">幻</font>种类也很多。而且特殊回路中，没有同时具备<font color="#a0522d">地</font>/<font color="#ff0000">火</font>和<font color="#ffa500">空</font>（多数范围魔法必须）属性值的回路。因此和<font color="#0000ff">水</font>、<font color="#008000">风</font>相比，<font color="#ff0000">火</font>和<font color="#a0522d">地</font>属性的高级魔法比较难以配出。这点在SC里面更为明显。<br>
+<br>
+另外，在配较复杂的魔法时，自己心算属性值不方便，此时可以看<font color="#0000ff">Orbment画面的右上角</font>，那里的<font color="#0000ff">Line1、Line2……</font>后面就帮你计算好了各链上的总属性值。<br>
+<br>
+【例2-b】第三章，给约修亚配出火系中圆攻击魔法"火山之咆哮"<br>
+配方同前。不过虽然小约的最长链为5孔，但是其中有两孔时限制，无法安放配方所需的回路。因此同样无法配出"火山之咆哮"。<br>
+<br>
+【例2-c】第三章，给奥利维尔配出"火山之咆哮"<br>
+配方同前。因为小奥的导力器只有一条结晶链（6孔）且只有1孔<font color="#808080">幻</font>限制，所以可以很轻松的配出来。<br>
+不过第三章奥利维尔不会出场，所以实际上不到终章无法使用这个魔法。<br>
+<br>
+注意：导力器结构的差异在这里体现出来了。用同样的回路，导力器结晶链越少、越长的角色，越能配出更多更高级的魔法。<br>
+小奥和科洛丝的导力器都是一条线，这两位都是最适合使用魔法的角色之一。<br>
+而阿加特和金的导力器都是3、4条短链，能配出的魔法种类很少，他们是最不适合使用魔法的角色之一。<br>
+当然是否适合主修魔法，也跟各人的ATS值有关。奥和科的ATS很高，而阿和金的ATS很低。后两者就应该扬长避短，用他们的物理攻击来战斗。当然，给他们配一些回复魔法以及大地之墙之类的辅助魔法，在最后的战斗中也是相当实用的。<br>
+<br>
+【例3】给奥利维尔配出辅助魔法"神圣祝福"（<font color="#808080">幻</font>4<font color="#a0522d">地</font>3<font color="#ff0000">火</font>3<font color="#0000ff">水</font>2<font color="#008000">风</font>2<font color="#ffa500">空</font>2）<br>
+FC最难配出的那些魔法不是高级攻击魔法，而是一些辅助魔法。特点是属性值不多，但特别杂，各种属性都需要。而FC里面很少有属性值种类较多的回路，所以基本是需要几种属性就至少需要几个回路，这样那些结晶链短的角色就不要去想了。<br>
+<br>
+配方如下：<br>
+<font color="#808080">●</font>ＥＰ３　<font color="#808080">幻</font>５　　　　　　　　<font color="#ffa500">空</font>３时３<br>
+<font color="#a0522d">●</font>防御２　　　<font color="#a0522d">地</font>３<br>
+<font color="#ff0000">●</font>攻击２　　　　　<font color="#ff0000">火</font>３<br>
+<font color="#0000ff">●</font>精神２　　　　　　　<font color="#0000ff">水</font>３<br>
+<font color="#008000">●</font>回避２　　　　　　　　　<font color="#008000">风</font>３<br>
+———————————————————<br>
+　总和　　<font color="#808080">幻</font>５<font color="#a0522d">地</font>３<font color="#ff0000">火</font>３<font color="#0000ff">水</font>３<font color="#008000">风</font>３<font color="#ffa500">空</font>３……满足<font color="#808080">幻</font>４<font color="#a0522d">地</font>３<font color="#ff0000">火</font>３<font color="#0000ff">水</font>２<font color="#008000">风</font>２<font color="#ffa500">空</font>２<br>
+至少需要5个回路且各属性均有，要求很高。小艾和小约均无法配出，符合要求的只有奥利维尔一人。<br>
+<br>
+注意：FC中只有阳炎（<font color="#808080">幻</font>3<font color="#a0522d">地</font>2）和叶隐（<font color="#808080">幻</font>3<font color="#ff0000">火</font>2），但没有属性值是<font color="#808080">幻</font>3<font color="#0000ff">水</font>2、<font color="#808080">幻</font>3<font color="#008000">风</font>2的回路。也没有包含<font color="#a0522d">地</font><font color="#0000ff">水</font><font color="#ff0000">火</font><font color="#008000">风</font>之中2种以上属性值的回路。因此没办法将所需回路个数进一步减少。各位可以试一下其他的组合，也是必须至少5个。<br>
+<br>
+<br>
+</P>
+
+<p><strong><font size="4"><font color="#0000ff"><a name="p3">&mdash;&mdash;其他部分魔法配法举例&mdash;&mdash;</a></font></font></strong><br>
+<br>
+对一些常用魔法或较复杂魔法，各举出一两种配法例（配法很多种，不止这些）。一般第一种为最少回路配法，第二种为缺少XX3时需要较多回路的代替配法。<br>
+上面教程中已讲过的魔法不再重复。<br>
+<br>
+<font color="#ff0000">我知道有一些玩家搞不懂或者懒得去搞懂配魔法的原理，而只想要几个配法组合。希望你们不要仅满足于照搬这里的配法，而最好还是弄懂配魔法的原理，以便自己随心所欲的配。</font><br>
+<br>
+注意：所需的所有回路<font color="#ff0000">必须要装在同一条结晶链上</font>，下面不再赘述。<br>
+<br>
+中回复术·复　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>５<font color="#ffa500">空</font>２<br>
+HP3/精神3+省EP1以上。<br>
+<br>
+治愈术·复　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>８<font color="#808080">幻</font>４<font color="#ffa500">空</font>２<br>
+(1)精神3+HP2以上+EP3。<br>
+(2)精神2+HP2+治愈+EP2+省EP2。<br>
+<br>
+复苏术　　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>４<font color="#a0522d">地</font>２<font color="#808080">幻</font>１<br>
+HP3/精神3+阳炎。<br>
+<br>
+大地之墙　　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>４<br>
+(1)防御3。<br>
+(2)防御2+阳炎/石化之刃。<br>
+<br>
+反魔法领域·全◆时　时11<br>
+(1)行动力3+驱动2+死之刃1。<br>
+(2)行动力2+驱动2+暗之刃+EP2+省EP2。<br>
+<br>
+泰坦之咆哮　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>８<font color="#ffa500">空</font>４<br>
+(1)防御3+石化之刃+省EP3。<br>
+(2)防御2+石化之刃+阳炎+省EP1+鹰目。<br>
+<br>
+钻石星尘　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>４<font color="#008000">风</font>２<font color="#ffa500">空</font>１<br>
+HP3/精神3+美臭。<br>
+<br>
+螺旋之炎　　　<font color="#ff0000">◆火</font>　<font color="#ff0000">火</font>５<font color="#008000">风</font>２<font color="#ffa500">空</font>２<br>
+(1)攻击3+美臭。<br>
+(2)攻击2+必杀之刃+回避2+EP2。<br>
+<br>
+等离子之波　　<font color="#008000">◆风</font>　<font color="#008000">风</font>８<font color="#ffa500">空</font>４<br>
+(1)回避3+美臭+EP1以上。<br>
+(2)回避2+魔防2+妨害2+EP1+情报。<br>
+<br>
+炽炎地狱　　　◆时　时８<font color="#ffa500">空</font>４<font color="#808080">幻</font>２<br>
+(1)行动力3+省EP2以上+EP2以上。<br>
+(2)行动力2+驱动2+EP2+鹰目。<br>
+<br>
+<br>
+</p>
+
+<p><strong><font color="#0000ff" size="4"><a name="p4">&mdash;&mdash;导力魔法表&mdash;&mdash;</a><br>
+<br>
+</font></strong>原表可查看游击士手册。<br>
+要查阅各种魔法的配置要求，游戏中查看手册即可。<br>
+此表和手册中的区别在于：<br>
+将魔法按照功能分类。<br>
+魔法的范围大小更精确。<br>
+增加了各攻击魔法的打击数（对于打击数概念的解释，请参考后文【战斗中获得的耀晶片数量与SEPITH UP奖励】部分）<br>
+增加了各魔法的驱动时间比。<br>
+<br>
+注：<br>
+魔法的范围<br>
+<br>
+小圆、中圆、大圆、直线只是比较笼统的说法，大圆有大有小，直线有宽有窄。这里在范围后面补上了一个数字，以表示圆的半径或直线的宽度。例如&ldquo;直线１&rdquo;表示直线宽度为１格；&ldquo;中圆３&rdquo;表示圆的半径为３格，实际有效范围的直径为７格；&ldquo;小圆２&rdquo;表示圆的半径为２格，实际有效范围的直径为５格。<br>
+<br>
+图示如下：<br>
+　中圆３的有效范围　小圆２的有效范围<br>
+　　（黑色方块）<br>
+<font face="宋体">　 □□■■■□□　　□□□□□□□<br>
+　 □■■■■■□　　□□■■■□□<br>
+　 ■■■■■■■　　□■■■■■□<br>
+　 ■■■■■■■　　□■■■■■□<br>
+　 ■■■■■■■　　□■■■■■□<br>
+　 □■■■■■□　　□□■■■□□<br>
+　 □□■■■□□　　□□□□□□□</font><br>
+<br>
+范围（非全体）魔法有两种指定范围的方式：目标指定和地点指定。<br>
+<br>
+目标指定：最为常见。只能以某个敌人或队员/NPC为中心。在魔法驱动期间，如果目标移动，魔法的范围圈会跟着移动，如果目标失效（如战斗不能），范围圈会自动换到另一个有效目标上，因此不会发空。单体魔法也可以算是目标指定。<br>
+<br>
+地点指定：圆范围可以指定在战场任何位置，直线可以朝向任何方向。同样范围大小，地点指定比目标制定有可能覆盖更多目标，但是敌人也有可能在驱动时逃出施法范围。所以最好赶在敌人行动前就发出，或者预估提前量，以免浪费。<br>
+<br>
+此表中，范围的数字后面加了&ldquo;◇&rdquo;号的，表示此魔法为地点指定。否则为目标指定。<br>
+<br>
+驱动时间显示了不同魔法所需驱动时间的比例。表中设最初级攻击魔法的驱动时间为１（相当于移动的惩罚时间的一半）。<br>
+回复魔法需要时间较短，辅助和妨害魔法时间不变，高级攻击魔法驱动时间较长。<br>
+<font face="宋体"><br>
+回复类（补充HP、解除异常状态）共8种<br>
+名称　　　　　属性　必要属性值　　　　效果　范围　　消费EP　效果　　　　　　　　驱动时间<br>
+回复术　　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>１　　　　　　　回复　单体　　１０　　HP 200回复　　　　　0.3<br>
+中回复术　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>４　　　　　　　回复　单体　　２０　　HP1000回复　　　　　0.4<br>
+大回复术　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>６　　　　　　　回复　单体　　４０　　HP2000回复　　　　　0.6<br>
+回复术·复　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>２<font color="#ffa500">空</font>１　　　　　回复　小圆２　２０　　HP 200回复　　　　　0.5<br>
+中回复术·复　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>５<font color="#ffa500">空</font>２　　　　　回复　中圆３　５０　　HP1000回复　　　　　0.7<br>
+治愈术　　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>４<font color="#808080">幻</font>２　　　　　回复　单体　　１０　　状态异常解除　　　　0.5<br>
+治愈术·复　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>８<font color="#808080">幻</font>４<font color="#ffa500">空</font>２　　　回复　大圆５　３０　　状态异常解除　　　　１<br>
+复苏术　　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>４<font color="#a0522d">地</font>２<font color="#808080">幻</font>１　　　回复　单体　　１０　　战斗不能解除+HP回复 0.5<br>
+<br>
+辅助类（给我方附加有利状态）共9种<br>
+名称　　　　　属性　必要属性值　　　　效果　范围　　消费EP　效果　　　　　　　　驱动时间<br>
+风之守护　　　<font color="#008000">◆风</font>　<font color="#008000">风</font>２　　　　　　　辅助　单体　　１０　　ＡＧＬ＋５０％　　　１<br>
+风之羽翼　　　<font color="#008000">◆风</font>　<font color="#008000">风</font>６　　　　　　　辅助　单体　　３０　　ＭＯＶ＋１　　　　　１<br>
+大地之障　　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>２　　　　　　　辅助　单体　　１０　　完全防御１次　　　　１<br>
+大地之墙　　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>４　　　　　　　辅助　小圆２　３０　　完全防御１次　　　　１<br>
+结晶防护　　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>４<font color="#0000ff">水</font>３<font color="#ffa500">空</font>２<font color="#808080">幻</font>１　辅助　单体　　２０　　ＤＥＦ＋２５％　　　１<br>
+强音之力　　　<font color="#ff0000">◆火</font>　<font color="#ff0000">火</font>４<font color="#008000">风</font>３<font color="#ffa500">空</font>２<font color="#808080">幻</font>１　辅助　单体　　２０　　ＳＴＲ＋２５％　　　１<br>
+神圣祝福　　　<font color="#808080">◆幻</font>　<font color="#808080">幻</font>４<font color="#a0522d">地</font><font color="#ff0000">火</font>３<font color="#0000ff">水</font><font color="#008000">风</font><font color="#ffa500">空</font>２辅助　单体　　４０　　STR·DEF＋２５％　　１<br>
+时间加速　　　◆时　时１　　　　　　　辅助　单体　　１０　　ＳＰＤ＋２５％　　　１<br>
+时间加速·改　◆时　时９　　　　　　　辅助　单体　　３０　　ＳＰＤ＋５０％　　　１<br>
+<br>
+妨害类（给敌方附加异常状态，不扣HP）共3种<br>
+名称　　　　　属性　必要属性值　　　　效果　范围　　消费EP　效果　　　　打击数　驱动时间<br>
+混沌烙印　　　<font color="#808080">◆幻</font>　<font color="#808080">幻</font>５　　　　　　　妨害　单体　　１０　　混乱　　　　　２　　１<br>
+反魔法领域　　◆时　时３　　　　　　　妨害　单体　　２０　　封魔　　　　　１　　１<br>
+反魔法领域·全◆时　时11　　　　　　　妨害　中圆３◇４０　　封魔　　　　　１　　１<br>
+<br>
+攻击类（攻击敌方，可能有一定几率附加异常状态）共23种<br>
+名称　　　　　属性　必要属性值　　　　效果　范围　　消费EP　附加效果　　打击数　驱动时间<br>
+石之锤　　　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>１　　　　　　　攻击　单体　　１０　　　　　　　　　１　　１<br>
+岩石之息　　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>３　　　　　　　攻击　单体　　３０　　20％几率石化　１　　１<br>
+大地之枪　　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>５　　　　　　　攻击　单体　　２０　　　　　　　　　３　　１<br>
+陨石冲击　　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>３<font color="#ffa500">空</font>２　　　　　攻击　中圆３　５０　　　　　　　　　１　　1.5<br>
+泰坦之咆哮　　<font color="#a0522d">◆地</font>　<font color="#a0522d">地</font>８<font color="#ffa500">空</font>４　　　　　攻击　全体　　５０　　　　　　　　　10　　２<br>
+水之矢　　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>１　　　　　　　攻击　单体　　１０　　　　　　　　　１　　１<br>
+冰蓝冲击　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>５　　　　　　　攻击　单体　　２０　　　　　　　　　１　　１<br>
+钻石星尘　　　<font color="#0000ff">◆水</font>　<font color="#0000ff">水</font>４<font color="#008000">风</font>２<font color="#ffa500">空</font>１　　　攻击　小圆２◇４０　　20％几率冻结　１　　1.5<br>
+火之矢　　　　<font color="#ff0000">◆火</font>　<font color="#ff0000">火</font>１　　　　　　　攻击　单体　　１０　　　　　　　　　１　　１<br>
+炎之箭　　　　<font color="#ff0000">◆火</font>　<font color="#ff0000">火</font>３　　　　　　　攻击　单体　　２０　　　　　　　　　１　　１<br>
+燃烧之息　　　<font color="#ff0000">◆火</font>　<font color="#ff0000">火</font>６　　　　　　　攻击　单体　　４０　　　　　　　　　１　　1.5<br>
+火之矢·改　　<font color="#ff0000">◆火</font>　<font color="#ff0000">火</font>３<font color="#008000">风</font>１<font color="#ffa500">空</font>１　　　攻击　中圆３　２０　　　　　　　　　１　　１<br>
+螺旋之炎　　　<font color="#ff0000">◆火</font>　<font color="#ff0000">火</font>５<font color="#008000">风</font>２<font color="#ffa500">空</font>２　　　攻击　中圆３　３０　　　　　　　　　１　　1.5<br>
+火山之咆哮　　<font color="#ff0000">◆火</font>　<font color="#ff0000">火</font>８<font color="#ffa500">空</font>２<font color="#a0522d">地</font>４　　　攻击　中圆３　５０　　　　　　　　　１　　２<br>
+风之轮　　　　<font color="#008000">◆风</font>　<font color="#008000">风</font>１　　　　　　　攻击　单体　　１０　　　　　　　　　６　　１<br>
+风之领域　　　<font color="#008000">◆风</font>　<font color="#008000">风</font>４　　　　　　　攻击　中圆３◇２０　　　　　　　　　11　　１<br>
+狂怒风暴　　　<font color="#008000">◆风</font>　<font color="#008000">风</font>８　　　　　　　攻击　大圆５◇４０　　　　　　　　　８　　1.5<br>
+闪电光束　　　<font color="#008000">◆风</font>　<font color="#008000">风</font>４<font color="#ffa500">空</font>２　　　　　攻击　直线１◇２０　　20％几率封技　１　　１<br>
+等离子之波　　<font color="#008000">◆风</font>　<font color="#008000">风</font>８<font color="#ffa500">空</font>４　　　　　攻击　直线２◇５０　　20％几率封技　１　　1.5<br>
+心灵之霞　　　◆时　时１　　　　　　　攻击　单体　　１０　　20％几率气绝　１　　１<br>
+暗影之矛　　　◆时　时５　　　　　　　攻击　单体　　２０　　20％几率即死　１　　１<br>
+地狱之门　　　◆时　时４<font color="#ffa500">空</font>２<font color="#808080">幻</font>１　　　攻击　小圆２　３０　　20％几率气绝　１　　１<br>
+炽炎地狱　　　◆时　时８<font color="#ffa500">空</font>４<font color="#808080">幻</font>２　　　攻击　中圆３◇４０　　20％几率气绝　１　　２<br>
+</font><br>
+总计43种魔法<br>
+<br>
+<br>
+</p>
+
+<p><strong><font size="4"><font color="#0000ff"><a name="p5">&mdash;&mdash;结晶回路表&mdash;&mdash;</a></font></font></strong><br>
+<br>
+原表可查看游击士手册。<br>
+要查阅各种回路的说明，可以查看手册，也可以直接在Item/Orbment中查看已拥有回路的信息。<br>
+此表和手册中的主要区别在于：<br>
+将回路根据安装限制分类。以下每个系的回路中，每个人只能装一个。<br>
+加上了需要修改才能得到的回路。<br>
+效果说明更详细。<br>
+<br>
+注1：<font color="#808080"><strong>灰色名字</strong></font>的回路正常情况下无法得到，只能修改出来。这些回路是程序员Debug时用的，或者是少数敌人身上才有的（为的是让这些敌人有物理免疫或者魔法免疫等特性），如果你不想破坏游戏平衡性，让游戏失去挑战性的话，请不要随便使用。而且这些回路的属性值很少甚至没有，因此对配魔法没有价值。<br>
+注2：刃系回路大部分可带来异常状态效果，但如果敌人对这种异常状态免疫，那么也照样无效。拿&quot;死之刃2&quot;去砍BOSS只能是浪费，我再提醒一遍。<br>
+注3：&quot;物理反射&quot;和&quot;魔法反射&quot;在一种情况下不是无敌：如果敌我都有反射能力，则攻击一方仍会受到反射伤害。<br>
+<br>
+<font face="宋体"><br>
+&mdash;&mdash;ＨＰ系（提升HP上限）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+ＨＰ１　　　<font color="#0000ff">●水</font>　<font color="#0000ff">水</font>１　　　　　　HP上限提升５％<br>
+ＨＰ２　　　<font color="#0000ff">●水</font>　<font color="#0000ff">水</font>３　　　　　　HP上限提升10％<br>
+ＨＰ３　　　<font color="#0000ff">●水</font>　<font color="#0000ff">水</font>５　　　　　　HP上限提升15％<br>
+<br>
+&mdash;&mdash;ＥＰ系（提升EP上限）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+ＥＰ１　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>２时１<font color="#ffa500">空</font>１　　EP上限提升５％<br>
+ＥＰ２　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>３时２<font color="#ffa500">空</font>２　　EP上限提升10％<br>
+ＥＰ３　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>５时３<font color="#ffa500">空</font>３　　EP上限提升15％<br>
+<br>
+&mdash;&mdash;攻击系（提升STR、降低DEF）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+攻击１　　　<font color="#ff0000">●火</font>　<font color="#ff0000">火</font>１　　　　　　STR提升５％，<font color="#ff0000">但DEF降低５％</font><br>
+攻击２　　　<font color="#ff0000">●火</font>　<font color="#ff0000">火</font>３　　　　　　STR提升10％，<font color="#ff0000">但DEF降低10％</font><br>
+攻击３　　　<font color="#ff0000">●火</font>　<font color="#ff0000">火</font>５　　　　　　STR提升15％，<font color="#ff0000">但DEF降低15％</font><br>
+<br>
+&mdash;&mdash;防御系（提升DEF）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+防御１　　　<font color="#a0522d">●地</font>　<font color="#a0522d">地</font>１　　　　　　DEF提升５％<br>
+防御２　　　<font color="#a0522d">●地</font>　<font color="#a0522d">地</font>３　　　　　　DEF提升10％<br>
+防御３　　　<font color="#a0522d">●地</font>　<font color="#a0522d">地</font>５　　　　　　DEF提升15％<br>
+<br>
+&mdash;&mdash;精神系（提升ATS）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+精神１　　　<font color="#0000ff">●水</font>　<font color="#0000ff">水</font>１　　　　　　ATS提升５％<br>
+精神２　　　<font color="#0000ff">●水</font>　<font color="#0000ff">水</font>３　　　　　　ATS提升10％<br>
+精神３　　　<font color="#0000ff">●水</font>　<font color="#0000ff">水</font>５　　　　　　ATS提升15％<br>
+<br>
+&mdash;&mdash;魔防系（提升ADF）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+魔防１　　　<font color="#008000">●风</font>　<font color="#008000">风</font>１　　　　　　ADF增加５<br>
+魔防２　　　<font color="#008000">●风</font>　<font color="#008000">风</font>３　　　　　　ADF增加15<br>
+魔防３　　　<font color="#008000">●风</font>　<font color="#008000">风</font>５　　　　　　ADF增加30<br>
+<br>
+&mdash;&mdash;命中系（提升DEX）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+
+命中１　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>１　　　　　　DEX增加５<br>
+命中２　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>３　　　　　　DEX增加10<br>
+命中３　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>５　　　　　　DEX增加15<br>
+<br>
+&mdash;&mdash;回避系（提升AGL）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+回避１　　　<font color="#008000">●风</font>　<font color="#008000">风</font>１　　　　　　AGL增加１<br>
+回避２　　　<font color="#008000">●风</font>　<font color="#008000">风</font>３　　　　　　AGL增加２<br>
+回避３　　　<font color="#008000">●风</font>　<font color="#008000">风</font>５　　　　　　AGL增加３<br>
+<br>
+&mdash;&mdash;移动系（提升MOV）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+移动１　　　<font color="#ffa500">●空</font>　<font color="#ffa500">空</font>１　　　　　　MOV增加１<br>
+移动２　　　<font color="#ffa500">●空</font>　<font color="#ffa500">空</font>３　　　　　　MOV增加２<br>
+移动３　　　<font color="#ffa500">●空</font>　<font color="#ffa500">空</font>５　　　　　　MOV增加３<br>
+<br>
+&mdash;&mdash;行动力系（提升SPD）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+行动力１　　●时　时１　　　　　　SPD提升10％<br>
+行动力２　　●时　时３　　　　　　SPD提升20％<br>
+行动力３　　●时　时５　　　　　　SPD提升30％<br>
+<br>
+&mdash;&mdash;妨害系（使物理攻击有一定几率解除驱动）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+妨害１　　　<font color="#008000">●风</font>　<font color="#008000">风</font>１　　　　　　使用普通攻击和战技时，有20%的几率<br>
+　　　　　　　　　　　　　　　　　解除敌人发动中的技和魔法<br>
+妨害２　　　<font color="#008000">●风</font>　<font color="#008000">风</font>３　　　　　　使用普通攻击和战技时，有50%的几率<br>
+　　　　　　　　　　　　　　　　　解除敌人发动中的技和魔法<br>
+妨害３　　　<font color="#008000">●风</font>　<font color="#008000">风</font>５　　　　　　使用普通攻击和战技时，有80%的几率<br>
+　　　　　　　　　　　　　　　　　解除敌人发动中的技和魔法<br>
+<br>
+&mdash;&mdash;省ＥＰ系（减少EP消费量）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+省ＥＰ１　　<font color="#ffa500">●空</font>　<font color="#ffa500">空</font>２时１<font color="#808080">幻</font>１　　使用魔法时，EP的消费量节省10％<br>
+省ＥＰ２　　<font color="#ffa500">●空</font>　<font color="#ffa500">空</font>３时２<font color="#808080">幻</font>２　　使用魔法时，EP的消费量节省25％<br>
+省ＥＰ３　　<font color="#ffa500">●空</font>　<font color="#ffa500">空</font>５时３<font color="#808080">幻</font>３　　使用魔法时，EP的消费量节省50％<br>
+<br>
+&mdash;&mdash;驱动系（缩短魔法驱动时间）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+驱动１　　　●时　时１　　　　　　魔法驱动时间缩短为原来的0.6<br>
+驱动２　　　●时　时３　　　　　　魔法驱动时间缩短为原来的0.3<br>
+<br>
+&mdash;&mdash;范围系（扩大魔法范围）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+范围１　　　<font color="#ffa500">●空</font>　<font color="#ffa500">空</font>３　　　　　　魔法效果范围+1（圆范围半径增加0.5格，直线<br>
+　　　　　　　　　　　　　　　　　范围宽度增加1格，不影响单体和全体魔法）<br>
+<br>
+&mdash;&mdash;刃系（使物理攻击一定几率附加特殊效果）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+毒之刃　　　<font color="#a0522d">●地</font>　<font color="#a0522d">地</font>３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人陷入「毒」状态<br>
+冻结之刃　　<font color="#0000ff">●水</font>　<font color="#0000ff">水</font>３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人陷入「冻结」状态<br>
+石化之刃　　<font color="#a0522d">●地</font>　<font color="#a0522d">地</font>３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人陷入「石化」状态<br>
+睡眠之刃　　<font color="#008000">●风</font>　<font color="#008000">风</font>３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人陷入「睡眠」状态<br>
+封魔之刃　　<font color="#a0522d">●地</font>　<font color="#a0522d">地</font>３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人陷入「封魔」状态<br>
+暗之刃　　　●时　时３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人陷入「黑暗」状态<br>
+封技之刃　　<font color="#ff0000">●火</font>　<font color="#ff0000">火</font>３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人陷入「封技」状态<br>
+混沌之刃　　<font color="#ff0000">●火</font>　<font color="#ff0000">火</font>３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人陷入「混乱」状态<br>
+必杀之刃　　<font color="#ff0000">●火</font>　<font color="#ff0000">火</font>３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　造成1.5倍的伤害<br>
+死之刃１　　●时　时３　　　　　　使用普通攻击和战技时，有10%的几率<br>
+　　　　　　　　　　　　　　　　　让敌人立即「战斗不能」（即死）<br>
+死之刃２　　●时　无　　　　　　　使用普通攻击和战技时，必然让敌人立即「战<br>
+　　　　　　　　　　　　　　　　　斗不能」（即死），<font color="#ff0000">但攻击到敌人一次以后，<br>
+　　　　　　　　　　　　　　　　　此回路会损坏（结晶孔变成空的）</font>。如果同时<br>
+　　　　　　　　　　　　　　　　　攻击到多个目标，只有一个会即死。<font color="#ff0000">如果攻击<br>
+　　　　　　　　　　　　　　　　　的目标对即死免疫，此回路同样会损坏</font>。<br>
+<font color="#808080">100%毒之刃</font>　<font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「毒」状态<br>
+<font color="#808080">100%冻结之刃</font><font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「冻结」状态<br>
+<font color="#808080">100%石化之刃</font><font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「石化」状态<br>
+<font color="#808080">100%睡眠之刃</font><font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「睡眠」状态<br>
+<font color="#808080">100%封魔之刃</font><font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「封魔」状态<br>
+<font color="#808080">100%暗之刃</font>　<font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「黑暗」状态<br>
+<font color="#808080">100%封技之刃</font><font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「封技」状态<br>
+<font color="#808080">100%混沌之刃</font><font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「混乱」状态<br>
+<font color="#808080">100%气绝之刃</font><font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　陷入「气绝」状态<br>
+<font color="#808080">100%必杀之刃</font><font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然造成1.5倍伤害<br>
+<font color="#808080">100%死之刃</font>　<font color="#a0522d">●地</font>　无　　　　　　　使用普通攻击和战技时，必然让敌人<br>
+　　　　　　　　　　　　　　　　　立即「战斗不能」（即死）<br>
+<br>
+&mdash;&mdash;其它回路（以下都没有安装限制）&mdash;&mdash;<br>
+名称　　　　属性　属性值　　　　　效果内容说明<br>
+<font color="#808080">物理吸收</font>　　<font color="#a0522d">●地</font>　无　　　　　　　受到物理攻击时，HP不会减少反而会增加。但<br>
+　　　　　　　　　　　　　　　　　是不能抵抗状态异常和能力减少。毒/冻结作<br>
+　　　　　　　　　　　　　　　　　用下仍然会损失HP，但是被石化后再受物理攻<br>
+　　　　　　　　　　　　　　　　　击不会战斗不能。<br>
+<font color="#808080">魔法吸收</font>　　<font color="#a0522d">●地</font>　无　　　　　　　受到魔法攻击时，HP不会减少反而会增加。但<br>
+　　　　　　　　　　　　　　　　　是不能抵抗状态异常和能力减少。毒/冻结作<br>
+　　　　　　　　　　　　　　　　　用下仍然会损失HP，但是被石化后再受魔法攻<br>
+　　　　　　　　　　　　　　　　　击不会战斗不能。<br>
+<font color="#808080">物理反射</font>　　●时　时１<font color="#ffa500">空</font>１<font color="#808080">幻</font>１　　受到物理攻击时，将把攻击伤害完全反弹回攻<br>
+　　　　　　　　　　　　　　　　　击者身上，自身不受损伤。也能抵抗物理攻击<br>
+　　　　　　　　　　　　　　　　　附加的任何异常状态和能力减少，将效果反弹<br>
+　　　　　　　　　　　　　　　　　回去。<br>
+<font color="#808080">魔法反射</font>　　●时　<font color="#a0522d">地</font>１<font color="#0000ff">水</font>１<font color="#ff0000">火</font>１<font color="#008000">风</font>１受到魔法攻击时，将把攻击伤害完全反弹回施<br>
+　　　　　　　　　　　　　　　　　法者身上，自身不受损伤。也能抵抗魔法附加<br>
+　　　　　　　　　　　　　　　　　的任何异常状态和能力减少，将效果反弹回去<br>
+　　　　　　　　　　　　　　　　　。如果队友对自己使用辅助魔法，效果也会反<br>
+　　　　　　　　　　　　　　　　　弹给队友。只有自己使用魔法才对自己有效。<br>
+情报　　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>２　　　　　　战斗中选取敌人目标时，可以看到敌人的详细<br>
+　　　　　　　　　　　　　　　　　信息（所携带的耀晶片数量、物品、经验值、<br>
+　　　　　　　　　　　　　　　　　特点描述等）只要队伍中有一人装上，就会生<br>
+　　　　　　　　　　　　　　　　　效。如果不装，将只能看到敌人的名称、HP和<br>
+　　　　　　　　　　　　　　　　　属性攻击有效率。<br>
+美臭　　　　<font color="#008000">●风</font>　<font color="#008000">风</font>３<font color="#ffa500">空</font>２　　　　在野外、迷宫中行走时，容易被魔兽发现：只<br>
+　　　　　　　　　　　　　　　　　要进入魔兽的活动范围便会遭到主动追击，并<br>
+　　　　　　　　　　　　　　　　　无法进行偷袭。只要队伍中有一人装上，就会<br>
+　　　　　　　　　　　　　　　　　生效。如果队伍中有人装上阳炎或叶隐，美臭<br>
+　　　　　　　　　　　　　　　　　将不会生效。（每个魔兽都有自己固定的活动<br>
+　　　　　　　　　　　　　　　　　范围，是一个圆形区域，有的大有的小。在范<br>
+　　　　　　　　　　　　　　　　　围之外，永远不会被魔兽发现）<br>
+鹰目　　　　<font color="#ffa500">●空</font>　<font color="#ffa500">空</font>３<font color="#808080">幻</font>２　　　　在野外、迷宫中行走时，不论魔兽距离多远，<br>
+　　　　　　　　　　　　　　　　　都将显示为实体，便于发现。只要队伍中有一<br>
+　　　　　　　　　　　　　　　　　人装上，就会生效。如果不装，远处的魔兽将<br>
+　　　　　　　　　　　　　　　　　会变得透明，较难发现。<br>
+阳炎　　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>３<font color="#a0522d">地</font>２　　　　在野外、迷宫中行走时，难以被魔兽发现：魔<br>
+　　　　　　　　　　　　　　　　　兽不会主动追击，除非队伍撞上魔兽，否则不<br>
+　　　　　　　　　　　　　　　　　会进入战斗。可以方便躲避或偷袭魔兽。只要<br>
+　　　　　　　　　　　　　　　　　队伍中有一人装上，就会生效。<br>
+叶隐　　　　<font color="#808080">●幻</font>　<font color="#808080">幻</font>３<font color="#ff0000">火</font>２　　　　在野外、迷宫中行走时，即使队伍撞上魔兽，<br>
+　　　　　　　　　　　　　　　　　也不会进入战斗（不遇敌）。只要队伍中有一<br>
+　　　　　　　　　　　　　　　　　人装上，就会生效。<br>
+治愈　　　　<font color="#0000ff">●水</font>　<font color="#0000ff">水</font>３时２　　　　在战斗之外，装备者将会随着时间逐渐恢复HP<br>
+<br>
+总计56<font color="#808080">(+15)</font>种回路</font><br>
+<br>
+<br>
+</p>
+
+<p><strong><font color="#0000ff" size="4"><a name="p6">&mdash;&mdash;各角色的导力器构造特点&mdash;&mdash;</a></font></strong><br>
+<br>
+○表示没有属性限定的孔。<br>
+<br>
+<font color="#ff4500"><strong>艾丝蒂尔</strong></font><br>
+<font face="宋体"><br>
+　　　○<br>
+　 ╱<br>
+○　　　　　○<br>
+│　　　　　│<br>
+│　　○　　│<br>
+│ ╱　　╲ │<br>
+○　　　　　○<br>
+</font><br>
+结晶链：２条<br>
+最长链：４孔<br>
+属性限定孔：无<br>
+导力器评价：Ａ<br>
+女主角的导力器虽然链都不算太长，但是由于没有任何属性限定孔，使得能配的魔法很多，FC中各属性最强魔法都能配出来，算是比较实用的了。<br>
+<br>
+<font color="#202020"><strong>约修亚</strong></font><br>
+<font face="宋体"><br>
+　　　时<br>
+　 ╱　　╲<br>
+○　　　　　○<br>
+│<br>
+│　　时<br>
+│ ╱　　╲<br>
+○　　　　　○<br>
+</font><br>
+结晶链：２条<br>
+最长链：５孔<br>
+属性限定孔：２时<br>
+导力器评价：Ａ<br>
+时属性限制其实不算限制，因为行动力和驱动几乎是必装的。死之刃1也是很不错的选择。FC中只修时魔法已经很够用，剩下的要配墙还是配回复随便。<br>
+<br>
+<font color="#808080"><strong>雪拉扎德</strong></font><br>
+<font face="宋体"><br>
+　　　○<br>
+　 ╱　　╲<br>
+○　　　　　<font color="#008000">风</font><br>
+　　　　　　│<br>
+　　　<font color="#008000">风</font>　　│<br>
+　 ╱　　╲ │<br>
+○　　　　　○<br>
+</font><br>
+结晶链：２条<br>
+最长链：５孔<br>
+属性限定孔：２<font color="#008000">风</font><br>
+导力器评价：Ａ<br>
+链也够长，风系回路选择也很多，风系魔法最廉价，只用风就能配出风中圆、风大圆，而且风魔法刷石头超赚。<br>
+<br>
+<font color="#ffa500"><strong>奥利维尔</strong></font><br>
+<font face="宋体"><br>
+　　　○<br>
+　 ╱　　╲<br>
+○　　　　　○<br>
+│　　　　　│<br>
+│　　<font color="#808080">幻</font>　　│<br>
+│ ╱　　　 │<br>
+○　　　　　○<br>
+</font><br>
+结晶链：１条<br>
+最长链：６孔<br>
+属性限定孔：１<font color="#808080">幻</font><br>
+导力器评价：Ｓ<br>
+最华丽的导力器，1幻限制几乎等于没限制，放个EP，其他的随便放就行了。要攻击能出攻击，要回复能出回复，要辅助能出辅助，最自由，随便配吧。神圣祝福只有他一人能用出来。不过别忘了留一个位置给驱动2。<br>
+<br>
+<font color="#8000ff"><strong>科洛丝</strong></font><br>
+<font face="宋体"><br>
+　　　<font color="#0000ff">水</font><br>
+　 ╱　　╲<br>
+○　　　　　○<br>
+│　　　　　│<br>
+│　　<font color="#0000ff">水</font>　　│<br>
+│ 　　　╲ │<br>
+<font color="#0000ff">水</font>　　　　　○<br>
+</font><br>
+结晶链：１条<br>
+最长链：６孔<br>
+属性限定孔：３<font color="#0000ff">水</font><br>
+导力器评价：Ｓ－<br>
+同样是一条线到底，典型的魔法型导力器。和小奥相比，水的限制多的过分了一点，而且FC里水系攻击魔法较少，只好多配些回复魔法了。除了3个水孔固定装HP/精神/治愈之外，剩下3个孔可以习惯性的配上行动力、驱动、省EP或EP。借着超强的ATS，水/时魔法相当的有威力。<br>
+<br>
+<font color="#ff0000"><strong>阿加特</strong></font><br>
+<font face="宋体"><br>
+　　　○<br>
+　　　│<br>
+○　　│　　○<br>
+│　　│　　│<br>
+│　　<font color="#ff0000">火</font>　　│<br>
+│ ╱　　╲ │<br>
+○　　　　　<font color="#ff0000">火</font><br>
+</font><br>
+结晶链：３条<br>
+最长链：３孔<br>
+属性限定孔：２<font color="#ff0000">火</font><br>
+导力器评价：Ｃ<br>
+不要以为谁的导力器是什么属性限制的，就能配出这个属性的最强魔法，赤毛就是一个典型反例。就算真能配出来，本人的ATS值也不配用，此人扛大剑上去硬砍才是硬道理。攻击、必杀之刃必装，其他的随便装些命中、行动力之类的就成了。<br>
+<br>
+<font color="#ffa500"><strong>提妲</strong></font><br>
+<font face="宋体"><br>
+　　　<font color="#ffa500">空</font><br>
+　 ╱　　╲<br>
+○　　　　　○<br>
+　　　　 ╱<br>
+　　　<font color="#ffa500">空</font><br>
+　 ╱　　╲<br>
+○　　　　　○<br>
+</font><br>
+结晶链：３条<br>
+最长链：４孔<br>
+属性限定孔：２<font color="#ffa500">空</font><br>
+导力器评价：Ｂ<br>
+LOLI虽然分叉较多，但是最长链也有四孔，可以配出时系很多魔法。而且第三章已经有了挺好的回路，还算比较有用。<br>
+<br>
+<font color="#8b0000"><strong>金</strong></font><br>
+<font face="宋体"><br>
+　　　○<br>
+　　　│<br>
+○　　│　　○<br>
+│　　│ ╱<br>
+│　　<font color="#a0522d">地</font><br>
+│ ╱　　╲<br>
+○　　　　　<font color="#a0522d">地</font><br>
+</font><br>
+结晶链：４条<br>
+最长链：３孔<br>
+属性限定孔：２<font color="#a0522d">地</font><br>
+导力器评价：Ｃ<br>
+这个就没什么好说的了，除了大地之墙外其他几乎一无是处，而且本人ATS不能看，和赤毛采用同样的处理方式吧。<br>
+<br>
+<br>
+</p>
+
+<p><strong><font size="4"><font color="#0000ff"><a name="p7">&mdash;&mdash;其他相关问题&mdash;&mdash;</a></font></font></strong><br>
+<br>
+<strong><a name="p9">【属性攻击和属性有效率】</a></strong><br>
+<br>
+敌人对地、水、火、风属性的魔法一般都有不同的抵抗能力。你在战斗中可以看到每种敌人的信息框中，都有四行类似这样的圆圈：<br>
+<font face="宋体">100 <font color="#a0522d">●●●●</font>○○○○<br>
+200 <font color="#0000ff">●●●●●●●●</font><br>
+50　<font color="#ff0000">●●</font>○○○○○○<br>
+100 <font color="#008000">●●●●</font>○○○○</font><br>
+这里的四行叫做&ldquo;属性攻击有效率&rdquo;，依次显示了这种敌人对地、水、火、风四种属性的攻击的抵抗能力。<br>
+以上面这种敌人为例，可以看到地和风的有效率是100，也就是说对它使用地和风属性的魔法，攻击力是100%（正常威力）。<br>
+水的有效率是200，说明这种敌人对水的抵抗力很弱，对它使用水属性的魔法，攻击力是通常的200%（2倍）。<br>
+火的有效率是50，说明这种敌人对火的抵抗力强，对它使用火属性的魔法，攻击力会减半，只有通常的50%。（凡是有效率小于100的，攻击的时候会看到敌人身上出现&ldquo;ATT GUARD&rdquo;的字样。）<br>
+因此对这种敌人，应尽量用水属性的魔法打它，这样最有效率，用地和风属性的魔法打它也可以，而用火属性的魔法打它就比较吃亏了。<br>
+如果看到敌人的某种属性的有效率是0，那相当于它对这种属性的魔法免疫。<br>
+<br>
+另外时、空、幻这三种属性的魔法是通吃的，跟物理攻击差不多，任何时候对任何敌人的有效率均为100。<br>
+<br>
+除了魔法，如果你的队员装备上护符（琥耀石护符、苍耀石护符、红耀石护符、翠耀石护符），那么他的物理攻击和战技也会变成某种属性的，这样他的普通攻击和战技的攻击力也遵循这个属性攻击有效率。<br>
+<br>
+<font color="#0000ff">注：攻击力变为2倍不代表伤害值（实际损HP量）变为2倍，攻击力减半也不代表伤害值减半。实际上，物理和魔法攻击的伤害计算式是这样的形式：伤害值=a*STR(或ATS)-b*DEF(或ADF)+c*伤害修正（a,b,c为正常数，第1项为我方的STR或ATS，第2项为目标的DEF或ADF，第3项的伤害修正由魔法或战技种类决定）。属性有效率影响的是<strong>第1、3项</strong>（正值），不影响<strong>第2项</strong>（负值）。因此就算当敌人的某项属性有效率为50%时，用那种属性的攻击，伤害值也不是正常时的一半，而是更小，可能会变成0。</font><br>
+<br>
+给队员佩戴护符以后，他自己的防御能力也会改变：这名队员对此护符的属性的防御力会加强（有效率50），而对相反属性的防御力会减弱（有效率150）。地和风、水和火是两对相反的属性。比如说装上红耀石护符以后，他的属性攻击有效率会变成：<br>
+<font face="宋体">100 <font color="#a0522d">●●●●</font>○○○○<br>
+150 <font color="#0000ff">●●●●●●</font>○○<br>
+50　<font color="#ff0000">●●</font>○○○○○○<br>
+100 <font color="#008000">●●●●</font>○○○○</font><br>
+也就是说他受到火属性攻击时，其攻击力会减半（不是伤害值减半），而受到水属性攻击，其攻击力会变成1.5倍。其他两种属性不变。<br>
+没有佩戴任何护符的队员，默认四属性有效率均为100。<br>
+<br>
+如果熟悉ED6里面某些敌人以及BOSS的属性（比如敌人对某种属性明显比较强/弱等），那么装备正确的护符可以让战斗变得轻松一些，但用得不好也会让战斗难度加大。<br>
+<br>
+注意，在打天使羊波波时，一定要把护符取下<br>
+天使羊波波的属性攻击有效率是这样的<br>
+<font face="宋体">0 　○○○○○○○○<br>
+0 　○○○○○○○○<br>
+0 　○○○○○○○○<br>
+0 　○○○○○○○○</font><br>
+因此四属性的魔法对它不能造成任何伤害。<br>
+而如果你装了护符，那么普通攻击和战技也无法造成任何伤害。<br>
+<br>
+另外，佩戴两个护符的情况<br>
+<br>
+防御方面：<br>
+如果佩戴两个相同护符，则队员自身的属性攻击有效率与只佩戴一个时相同（没有叠加）<br>
+如：琥耀石护符+琥耀石护符（地+地）<br>
+<font face="宋体">50　<font color="#a0522d">●●</font>○○○○○○<br>
+100 <font color="#0000ff">●●●●</font>○○○○<br>
+100 <font color="#ff0000">●●●●</font>○○○○<br>
+150 <font color="#008000">●●●●●●</font>○○</font><br>
+<br>
+如果佩戴两个属性相反的护符（地+风；水+火），则这两种属性的有效率都升为150（不耐打了），另两种属性仍为100<br>
+如：琥耀石护符+翠耀石护符（地+风）<br>
+<font face="宋体">150 <font color="#a0522d">●●●●●●</font>○○<br>
+100 <font color="#0000ff">●●●●</font>○○○○<br>
+100 <font color="#ff0000">●●●●</font>○○○○<br>
+150 <font color="#008000">●●●●●●</font>○○</font><br>
+<br>
+如果佩戴两个属性不相关的护符，则这两种属性的有效率都降至50，而另两种升为150<br>
+如：琥耀石护符+红耀石护符（地+火）<br>
+<font face="宋体">50　<font color="#a0522d">●●</font>○○○○○○<br>
+150 <font color="#0000ff">●●●●●●</font>○○<br>
+50　<font color="#ff0000">●●</font>○○○○○○<br>
+150 <font color="#008000">●●●●●●</font>○○</font><br>
+<br>
+攻击方面：<br>
+会自动变成对敌伤害较大的那种属性。<br>
+<br>
+如：某敌人的属性攻击有效率为<br>
+<font face="宋体">100 <font color="#a0522d">●●●●</font>○○○○<br>
+100 <font color="#0000ff">●●●●</font>○○○○<br>
+150 <font color="#ff0000">●●●●●●</font>○○<br>
+100 <font color="#008000">●●●●</font>○○○○</font><br>
+如果佩戴红耀石护符，那么普通攻击的攻击力会变成1.5倍；<br>
+而再佩戴任何一个其他护符，普攻的攻击力仍是1.5倍（跟两个护符的安装位置无关，下同）。<br>
+<br>
+又如另一种敌人为<br>
+<font face="宋体">200 <font color="#a0522d">●●●●●●●●</font><br>
+100 <font color="#0000ff">●●●●</font>○○○○<br>
+100 <font color="#ff0000">●●●●</font>○○○○<br>
+50　<font color="#008000">●●</font>○○○○○○</font><br>
+如果佩戴琥耀石护符，那么普攻对它是2倍攻击力；<br>
+再佩戴任何一个其他护符，普攻仍是2倍攻击力。<br>
+如果佩戴翠耀石护符，那么普攻将只有一半的攻击力；<br>
+但如果再佩戴一个苍耀石或红耀石护符，那么普攻将恢复正常（1倍）攻击力。<br>
+<br>
+<strong><a name="p10">【关于序章的工房研修】</a></strong><br>
+<br>
+是不是有些人总是卡在这里出不去？如果和雪拉对话，她会要你安装适当的回路，&ldquo;以便能够使用<strong>攻击魔法</strong>和<strong>回复魔法</strong>&rdquo;。虽然攻击魔法很多，但是只有装上<font color="#0000ff">水</font>属性的回路以后，才能配出回复魔法&ldquo;回复术&rdquo;。所以请给小艾装上<font color="#0000ff">水</font>属性回路&ldquo;HP1&rdquo;（小约则装上&ldquo;行动力1&rdquo;），再和雪拉对话，就解决了。如果没装HP1，无法出去。<br>
+<br>
+<strong><a name="p11">【战斗中获得的耀晶片数量与SEPITH UP奖励】</a></strong><br>
+<br>
+每一种魔兽身上都带有一定数量的各种耀晶片。可以用&ldquo;情报&rdquo;回路看到各魔兽身上耀晶片数量的具体值。这些是每次战斗结束以后，必然可以获得的数量。<br>
+此外，如果在战斗中，你得到SEPITH UP的奖励的话，那么除了必然获得的量之外，还会额外获得一些耀晶片。<br>
+<br>
+具体计算方法如下（参考<a target="_blank" href="http://www.h-eba.com/gagharv">http://www.h-eba.com/gagharv</a>网站）：<br>
+<br>
+你用的每种招式（不论是普通攻击、战技还是魔法），都有一个打击数，表明了这个招式的发出过程中，对敌人进行了几次攻击。大多数招式，打击数都为1，少数招式打击数会较多。<br>
+在抢到SEPITH UP的奖励时，如果攻击目标身上某属性耀晶片的数量为A，那么&ldquo;每次攻击&rdquo;将夺得的该属性额外耀晶片数量为：<br>
+<font face="宋体"><br>
+A=0时 　：0<br>
+0&lt;A&lt;10时：0～1（随机）<br>
+A&gt;=10时 ：A除以10然后取整<br>
+</font><br>
+再乘以该招式的&ldquo;打击数&rdquo;，就是这个招式能从该目标身上夺得额外耀晶片的总量：<br>
+<font face="宋体"><br>
+A=0时 　：0<br>
+0&lt;A&lt;10时：0～打击数之间的随机值<br>
+A&gt;=10时 ：A除以10然后取整，再乘以打击数<br>
+</font><br>
+举例：某敌人身上带有的耀晶片数量为：<br>
+<font face="宋体"><br>
+　　　　　　　　　 地　 水 　火　 风 　时　空　幻　<br>
+　　　　　　　　　 32　 3　　21　　8　　0　18　50<br>
+</font><br>
+那么在SEPITH UP时，用以下招数将获得的额外耀晶片数量如下。<br>
+<font face="宋体"><br>
+招式　　　打击数　 地　 水　 火　 风　 时　空　幻<br>
+普通攻击　　1　　　3 　0～1 　2　0～1 　0　1 　5<br>
+旋风轮　　　4　　　12　0～4 　8　0～4 　0　4 　20<br>
+烈波无双击　17　　 51　0～17 34　0～17　0　17　70※<br>
+大地之枪　　3　　　9 　0～3 　6　0～3 　0　3 　15<br>
+风之轮　　　6　　　18　0～6　12　0～6 　0　6 　30<br>
+混沌烙印　　2　　　6 　0～2 　4　0～2 　0　2 　10<br>
+※每场战斗，各属性的耀晶片最多只能获得70个。<br>
+</font><br>
+如果同时攻击到多个目标，那么从每个目标身上都能抢到额外耀晶片。<br>
+<br>
+由此可以看出，<font color="#0000ff">在得到SEPITH UP奖励的时候，最好使用打击数更大的招式，这样一般可以获得更多的额外耀晶片</font>。<br>
+打击数较高的魔法有：泰坦之咆哮、风之轮、风之领域、狂怒风暴。<br>
+打击数较高的S战技有：小艾、雪拉、提妲的S技。<br>
+各普通攻击的打击数均为1。<br>
+各魔法的打击数请见本文中的魔法表。<br>
+各战技的打击数请见<a href="arts_crafts1.html">此篇</a>：<br>
+<br>
+如果SEPITH UP奖励的时候被敌人攻击，那么你将损失耀晶片。<br>
+<br>
+损失耀晶片的规律如下：<br>
+各属性耀晶片的减少率不同；<br>
+每种属性得耀晶片的损失量=目前拥有该耀晶片的总数/减少值，取整。<br>
+减少值：空为500，幻为400，其它为200<br>
+<br>
+另外存在一个损失确率，即不是每次每种耀晶片都会损失。<br>
+如果某种耀晶片数量小于减少值，那么损失确率会减少，损失的耀晶片会变为1。<br>
+损失确率为50%；如果耀晶片数量小于减少值，损失确率降为25%。<br>
+<br>
+尽量不要被敌人抢到这个奖励，特别要避免敌人在奖励的时候用打击数高的招式打你！<br>
+<br>
+<strong><a name="p12">【天使羊波波】</a></strong><br>
+<br>
+可能有人偶然见过一种叫&ldquo;天使羊波波&rdquo;的魔兽，但是很难打死，而且很快就逃跑了。<br>
+如果你能在它逃跑前打死它，可以获得相当多的经验值和耀晶片，升级超快，而且可以很快的攒耀晶片，而且还有可能掉出两种饰品，各免疫两种状态。所以不少人不停的刷它出来杀，这就是所谓的&ldquo;刷羊&rdquo;。<br>
+<br>
+天使羊波波的特点在于：<br>
+<font color="#0000ff">DEF很高（S技往往也难以打死）<br>
+ADF极高（魔法造成的伤害极低）<br>
+AGL很高（普通攻击和普通战技很容易MISS）<br>
+很快就会逃跑<br>
+EP吸收攻击<br>
+四属性攻击有效率为0（因此地水火风四属性魔法完全无效，装上护符以后普通攻击、战技、S战技也完全无效）<br>
+不抗即死，但抗其他所有状态异常（各种带即死的攻击/战技/魔法可以让它即死）</font><br>
+活动范围很广，比一般的魔兽活动范围大很多，因此若不带阳炎很难偷袭成功（只要进入它的活动范围，而它没有背向你，那它就会直冲你而来）<br>
+<br>
+出现地点：<br>
+FC每一章，羊只会出现在一个场景中。将其打死以后，离开这个场景再进来，它就有可能再次出现。<br>
+序章：牛奶小街， 西边一张图（紧邻威尔特桥），在道路附近<br>
+第1章：西柏斯街道，最西边一张图（紧邻古罗尼山道），在中间某处<br>
+第2章：梅威海道，最南边一张图（紧邻卢安市和街景林道），在海滩上<br>
+第3章：托兰特平原道，红莲之塔外面一张图（有四个出口），东北部附近<br>
+终章：艾尔贝周游道，最西南边一段（有防御3、魔防3宝箱的那一段），中部路边装回复药的宝箱旁边<br>
+<br>
+有效打法：<br>
+首先，最好是<font color="#0000ff">先发制人</font>，这样出手机会更多<br>
+<font color="#0000ff">S技</font>总是有效的（不会MISS），不过注意把STR提高（来得及的话，先用下助威等），并尽量攒满200的CP，这样威力更大<br>
+（PS：CP199和CP100，S技的威力是一样的。只有CP完全满200才有更大的伤害。）<br>
+魔法方面，<font color="#ff0000">千万不要使用地水火风属性的魔法</font>，因为羊的属性攻击有效率均为0，所以用这些魔法会完全无效。因为ADF极高，时魔法伤害也会为0（0伤害在叹号时会变成个位数伤害，这是游戏系统设定的）。建议用&ldquo;<font color="#0000ff">暗影之矛</font>&rdquo;，因为它有20%的即死几率，对羊是有效的。即使魔法本身0伤害，但如果RP好，就可以秒杀了！<br>
+<font color="#0000ff">必杀之刃、死之刃1</font>是很实用的，请配合S技使用<br>
+<font color="#0000ff">死之刃2</font>就是专门用来杀羊的（BOSS和通缉魔兽多半免疫即死，用来打一般小兵又可惜），同样配合S技使用吧。<br>
+如果RP好，最好是能抢到<font color="#0000ff">叹号、STR上升的奖励</font><br>
+如果抢到<font color="#0000ff">SEPITH UP奖励</font>，那么即使没有打死它，也可以获得奖励耀晶片。<br>
+<font color="#ff0000">打羊的时候，千万不要佩戴护符（琥耀石护符、苍耀石护符、红耀石护符、翠耀石护符），否则如前所说，即使是S技也会完全失效！</font><br>
+<br>
+<strong><a name="p13">【开封结晶孔与EP值上限】</a></strong><br>
+<br>
+再次提醒：<font color="#ff0000">人物升级不会提升EP上限。要提升EP上限，必须在工房开封新的结晶孔。</font><br>
+FC中各角色，当所有结晶孔全部未开封时，EP上限将为50。<br>
+开封结晶孔需要花费<font color="#a0522d">地</font>、<font color="#0000ff">水</font>、<font color="#ff0000">火</font>、<font color="#008000">风</font>四属性的耀晶片。需要的数量是同样多的。每开封一个结晶孔，都可以提升EP上限。<br>
+离中央孔越远的孔，开封需要花费的耀晶片越多，而提升的EP值也越多。<br>
+<font face="宋体"><br>
+距中央孔的距离　０　１　２　３　４　５（０为中央孔，默认都是已开封的）<br>
+　　　　　　　　○─○─○─○─○─○<br>
+所需各耀晶片数量(0) 30　50　80　120 200<br>
+增加的EP值　　　(0) 30　50　80　120 200<br>
+</font><br>
+例如给小艾把所有孔都开封后，需要花费的耀晶片总数为：<font color="#a0522d">地</font><font color="#0000ff">水</font><font color="#ff0000">火</font><font color="#008000">风</font>各30+50+80+30+50=240。而EP上限将提升为50+240=290（不装EP回路时）。<br>
+而把科洛丝的所有孔都开封后，需要花费耀晶片总数为：<font color="#a0522d">地</font><font color="#0000ff">水</font><font color="#ff0000">火</font><font color="#008000">风</font>各30+50+80+120+200=480。而EP上限将提升为50+480=530。<br>
+结晶链更少更长的角色，将拥有离中央孔更远的孔，所以全部开封需要的耀晶片更多，但EP上限将会更高。<br>
+<font face="宋体"><br>
+角色　　　　　　　　<font color="#ff4500">艾</font>　<font color="#202020">约</font>　<font color="#808080">雪</font>　<font color="#ffa500">奥</font>　<font color="#8000ff">科</font>　<font color="#ff0000">阿</font>　<font color="#ffa500">提</font>　<font color="#8b0000">金</font><br>
+──────────────────────────<br>
+全部开封所需耀晶片　240 310 310 480 480 190 220 170<br>
+全部开封后EP上限　　290 360 360 530 530 240 270 220</font><br>
+</p>
+
+
+</section>
+    <section></section>
+    <section> </section>
+  <!-- end .content --></article>
+  <footer>
+    <p>&nbsp;</p>
+    <address>
+      Created by &copy;2012 <a href="http://shencore.renren.com/">高晨水水</a> 版权所有 
+    </address>
+  </footer>
+  <!-- end .container --></div>
+</body>
+</html>
