@@ -26,6 +26,8 @@ var app = {
 	return "Windows 7 "
 	}else if(ua.indexOf("nt 6.2") > -1){
 	return "Windows 8"
+	}else if(ua.indexOf("nt 6.3") > -1){
+	return "Windows 8.1"
 	}else{
 	return  this.version <= '6.0' ? "未知的操作系统，可能你的系统太旧。" : "未知的操作系统，可能你的系统太新。";
 	//如果上面全部nt版本 (windows 内核版本) 无效，就判断高于6.0版本就是windows 8 以后  低于就是win98了吧??
