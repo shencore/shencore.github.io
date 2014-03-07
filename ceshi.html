@@ -42,7 +42,7 @@ var app = {
 	 var flash = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
 	  return '已安装Flash播放器！(有可能用到Flash播放)';
 	 }catch(e){
-	 return '未安装Flash播放器！(有些特殊效果可能不能显示)'
+	 return '未安装Flash播放器！(有些特殊效果可能不能显示。注：Chrome浏览器请无视本项)'
 	 }
 	},
 	UA:window.navigator.userAgent
@@ -50,7 +50,7 @@ var app = {
 
 var outpub =[
 '操作系统：'+app.os(),
-'浏览器版本：'+app.version  +( app.version < 7 ? ' (浏览器版本过低建议升级浏览器！)' : ' (浏览器版本符合要求！)' ),
+'浏览器版本：'+app.version  +( app.version < 7 ? ' (浏览器版本过低建议升级浏览器！注：如果您使用的是非IE浏览器，请无视本项)' : ' (浏览器版本符合要求！)' ),
 '显示器分辨率：'+app.screen.width +'*'+ app.screen.height +  ( app.screen.width < 1280 ? ' (分辨率过低，建议提高到宽度 1280 以上！) ' : ' (分辨率完全符合要求！)') ,
 'Flash播放器：'+app.is_flash(),
 '客户端信息：'+ app.UA
