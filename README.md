@@ -10,8 +10,8 @@ a helper for the game Eiyuu Densetsu Sora no Kiseki
 BLOG http://blog.sorabbs.tk<br>
 同步镜像站-狡兔三窟-目前主镜像就是这个GITHUB，其他镜像都不保证最新<br>
 主镜像 <br>
-http://ed6.sorabbs.tk/<br>
-http://shencore.github.io/<br>
+https://ed6.sorabbs.tk/<br>
+https://shencore.github.io/<br>
 其他镜像(注：最迟在2016年4月8日，以下所有镜像均已失效，百度云是未实名收回，新浪是2016年3月底用尽免费云豆，其余国外主机是主机商收回)<br>
 http://ed6sora.cdn.duapp.com/   更新到2014.03<br>
 http://ed6sora.duapp.com/  同上<br>
