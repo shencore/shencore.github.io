@@ -9,16 +9,10 @@ a helper for the game Eiyuu Densetsu Sora no Kiseki
 相关讨论 BBS http://sorabbs.tk/bbs/<br>
 BLOG http://blog.sorabbs.tk<br>
 同步镜像站-狡兔三窟-目前主镜像就是这个GITHUB，其他镜像都不保证最新<br>
-主镜像 <br>
+镜像地址 <br>
 https://ed6.sorabbs.tk/<br>
 https://shencore.github.io/<br>
-其他镜像(注：最迟在2016年4月8日，以下所有镜像均已失效，百度云是未实名收回，新浪是2016年3月底用尽免费云豆，其余国外主机是主机商收回)<br>
-http://ed6sora.cdn.duapp.com/   更新到2014.03<br>
-http://ed6sora.duapp.com/  同上<br>
-http://ed6sora.sinapp.com/   更新到2013.10<br>
-http://e1.sorabbs.tk/        同上<br>
-http://ed6sora.orgw.net/     更新到2013.11<br>
-
+http://ed6.orangeclk.com/  (感谢orangeclk提供国内分流站)<br>
 
 -----------------------
 文件结构说明<br>
